@@ -1,0 +1,125 @@
+//---  C# WPF Tutorial - One-Way Data Binding | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+**
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Element Binding		(XAML code)		** One-Way Data Binding		MainWindow.xaml
+
+** One-Way Data Binding
+
+
+** In one-way binding, data is bound from its source (that is the object that holds the data) to its target (that is the object that displays the data).
+
+Let’s have a look at a simple example of one-way data binding.
+The following XAML code creates four text blocks with some properties.
+
+<Window x:Class="FirstWPFApp.MainWindow"
+... just some http and some other pre-built code ...
+
+	  xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d" Title="MainWindow" Height="350" Width="604">
+    
+    <Grid Background="#a4dded">
+
+        <StackPanel Name="Display">
+            <StackPanel Orientation="Horizontal" Margin="50,50,0,0">
+                <TextBlock Text="Name: " Margin="10" Width="100"/>
+                <TextBlock Margin="10" Width="100" Text="{Binding Name}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="50,50,0,0">
+                <TextBlock Text="Title: " Margin="10" Width="100"/>
+                <TextBlock Margin="10" Width="100" Text="{Binding Title}"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+    
+    
+</Window>
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+
+** Add New Folder called Classes in Solution Explorer.
+TIP: Create an Employee... class within this folder
+
+FirstWPFApp (Windows Presentation Foundation)		R.click
+** Add > New item...		Class
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+// ---	
+/*===============================================    Code Referencing Above    ======================================================*/
+
+** Add some basic Setters and Getters to reflect our above XAML code 
+	<TextBox Text="{Binding Name}"
+	<TextBox Text="{Binding Title}"
+
+namespace FirstWPFApp.Classes
+{
+    public class Employee
+    {
+        public required string Name { get; set; }		// ** Intellisense recommended adding 	required
+        public required string Title { get; set; }
+
+        public static Employee GetEmployee()
+        {
+            var emp = new Employee()
+            {
+                Name = "Eats Beans",
+                Title = "Developer"
+            };
+            return emp;           
+        }
+    }
+}
+
+/**/
+
+/*=================================================    End of Declaration    ========================================================*/
+/**/
+
+** Now goto Solution Explorer 	(Double click 	MainPage.xaml.cs)
+
+using FirstWPFApp.Classes;		// ** Having this line added is IMPORTANT!!
+using System.Windows;
+
+
+namespace FirstWPFApp
+{
+    // <summary>
+    // Interaction logic for MainWindow.xaml
+    // </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            DataContext = Employee.GetEmployee();		// Add this line of code
+        }
+    }
+}
+
+/**/
+
+/*=================================================    End of Declaration    ========================================================*/
+/**/
+
+
+
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
