@@ -1,0 +1,280 @@
+//---  C# WPF Programming #00 - Environment Setup | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+**
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML programming		(XAML code)		** XAML - Basics		MainWindow.xaml
+
+<Window x:Class = "FirstStepDemo.MainWindow" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" 
+   xmlns:d = "http://schemas.microsoft.com/expression/blend/2008" 
+   xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006" 
+   xmlns:local = "clr-namespace:FirstStepDemo" 
+   mc:Ignorable = "d" Title = "MainWindow" Height = "350" Width = "604"> 
+	
+   <Grid> 
+      <Button Content = "First Button" Height = "30" Width = "80"/> 
+      <TextBlock Text = "Congratulations you have successfully build your first app" 
+         Height = "30" Margin = "162,180,122,109"/> 
+   </Grid> 
+	
+</Window> 
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- 
+
+
+<Window x:Class="FirstWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d" Title="MainWindow" Height="350" Width="604">
+    
+    <Grid Background="LightBlue">
+        <Button Content="ImaButton" Height="30" Width="80"/>
+        <TextBlock Text="Yaaa first WPF button" Height="30" Margin="162,180,122,109"/>
+
+    </Grid>
+</Window>
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML Vs C# Code	Example of a <StackPanel>
+
+** In this example, we have created a stack panel with a button and a Text block and defined some of the properties of the button and
+the text block such as Height, Width, and Margin.
+
+<Grid Background="LightBlue">
+    <StackPanel>
+        <TextBlock Text="Welcome to XAML Tutorial" Height="20" Width="200" Margin="5"/>
+        <Button Content="Ok" Height="20" Width="60" Margin="5"/>
+    </StackPanel>
+
+</Grid>
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Now look at the same code which is written in C#.
+
+using System; 
+using System.Text; 
+using System.Windows; 
+using System.Windows.Controls;  
+
+// ---	
+/*===============================================    Code Referencing Above    ======================================================*/
+
+namespace XAMLVsCode { 
+   /// <summary> 
+      /// Interaction logic for MainWindow.xaml 
+   /// </summary> 
+	
+   public partial class MainWindow : Window {
+      public MainWindow() { 
+         InitializeComponent();  
+         
+         // Create the StackPanel 
+         StackPanel stackPanel = new StackPanel();
+         this.Content = stackPanel; 
+			
+         // Create the TextBlock 
+         TextBlock textBlock = new TextBlock(); 
+         textBlock.Text = "Welcome to XAML Tutorial"; 
+         textBlock.Height = 20;
+         textBlock.Width = 200; 
+         textBlock.Margin = new Thickness(5); 
+         stackPanel.Children.Add(textBlock);  
+			
+         // Create the Button 
+         Button button = new Button(); 
+         button.Content = "OK"; 
+         button.Height = 20; 
+         button.Width = 50; 
+         button.Margin = new Thickness(20); 
+         stackPanel.Children.Add(button); 
+      } 
+   }
+}
+
+/**/
+
+/*=================================================    End of Declaration    ========================================================*/
+/**/
+
+//---  XAML - Building Blocks
+
+Objects
+
+XAML is a typically declarative language which can create and instantiate objects.
+It is another way to describe objects based on XML, i.e., which objects need to be created and how they should be initialized before
+the execution of a program. Objects can be
+
+-Containers (Stack Panel, Dock Panel)
+-UI Elements / Controls (Button, TextBox, etc.)
+-Resource Dictionaries
+
+Resources
+
+Resources are normally definitions connected with some object that you just anticipate to use more often than once.
+It is the ability to store data locally for controls or for the current window or globally for the entire applications.
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- 
+
+<StackPanel>
+    <TextBlock Text="Welcome to XAML Tutorial" Height="20" Width="200" Margin="10" HorizontalAlignment="Center"
+               TextAlignment="Center"/>
+    <Button x:Name="Btn_Click" Content="ClickMe" Height="20" Width="150" HorizontalAlignment="Center"/>
+</StackPanel>
+
+Or,
+
+<StackPanel>
+    <TextBlock Text="Welcome to XAML Tutorial" Height="20" Width="200" Margin="10" HorizontalAlignment="Center"
+       TextAlignment="Center"/>
+    <Button Click="Btn_Click" Content="ClickMe" Height="20" Width="150" HorizontalAlignment="Center"/>
+</StackPanel>
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- MainWindow.xaml.cs
+
+using System.Windows;
+
+// ---	
+/*===============================================    Code Referencing Above    ======================================================*/
+
+namespace FirstWPFApp
+{
+    // <summary>
+    // Interaction logic for MainWindow.xaml
+    // </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Btn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Button is clicked!", "Title Bar message", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+        }
+    }
+}
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- The following example contains a textbox with ContextMenu which manipulates the text within the textbox.
+
+The following XAML code creates a TextBox, a ContextMenu, and MenuItems with some properties and events such as Checked, Unchecked, and Click.
+
+
+<Window x:Class="FirstWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d" Title="MainWindow" Height="350" Width="604">
+    
+    <Grid Background="LightBlue">
+        <TextBox Name="textBox1" TextWrapping="Wrap" Margin="10" Grid.Row="7" TextChanged="TextBox1_TextChanged">
+            Hi, this is XAML tutorial.		// ** This text gets displayed in the Form or MainWindow
+            <TextBox.ContextMenu>
+
+                <ContextMenu>
+                    <MenuItem Header="_Bold" IsCheckable="True"
+                              Checked="Bold_Checked" Unchecked="Bold_Unchecked"/>
+                    <MenuItem Header="_Italic" IsCheckable="True"
+                              Checked="Italic_Checked" Unchecked="Italic_Unchecked"/>
+                    <Separator/>
+                    <MenuItem Header="Increase Font Size" Click="IncreaseFont_Click"/>
+                    <MenuItem Header="Decrease Font Size" Click="DecreaseFont_Click"/>
+                </ContextMenu>
+
+            </TextBox.ContextMenu>
+        </TextBox>
+    </Grid>
+    
+    
+</Window>
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- MainWindow.xaml.cs
+
+using System.Windows;
+
+// ---	
+/*===============================================    Code Referencing Above    ======================================================*/
+
+namespace FirstWPFApp
+{
+    // <summary>
+    // Interaction logic for MainWindow.xaml
+    // </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Bold_Checked(object sender, RoutedEventArgs e)
+        {
+            textBox1.FontWeight = FontWeights.Bold;
+        }
+        private void Bold_Unchecked(object sender, RoutedEventArgs e)
+        {
+            textBox1.FontWeight = FontWeights.Normal;
+        }
+        private void Italic_Checked(object sender, RoutedEventArgs e)
+        {
+            textBox1.FontStyle = FontStyles.Italic;
+        }
+        private void Italic_Unchecked(object sender, RoutedEventArgs e)
+        {
+            textBox1.FontStyle = FontStyles.Normal;
+        }
+        private void IncreaseFont_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox1.FontSize < 18)
+            {
+                textBox1.FontSize += 2;
+            }
+        }
+        private void DecreaseFont_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox1.FontSize > 10)
+            {
+                textBox1.FontSize -= 2;
+            }
+        }
+    }
+}
+
+/**/
+
+/*=================================================    End of Declaration    ========================================================*/
+/**/
+
+!! IMPORTANT NOTES:
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
