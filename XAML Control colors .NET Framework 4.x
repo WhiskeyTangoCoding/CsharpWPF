@@ -1,3 +1,5 @@
+<!-- ** NOTE Below - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
+
 <!--Control colors.-->
 <Color x:Key="WindowColor">#FFE8EDF9</Color>
 <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>
@@ -40,3 +42,5 @@
 <Color x:Key="SliderTrackDarkColor">#FFC5CBF9</Color>
 
 <Color x:Key="NavButtonFrameColor">#FF3843C4</Color>
+
+<!-- ** NOTE Above - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
