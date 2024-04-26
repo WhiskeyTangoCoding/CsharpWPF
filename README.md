@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @WhiskeyTangoCoding
 - Educated. Titled CET, NSA/IT. C++ C# Coder. Teaching. LIVE Streamer. Martial Artist. Pro-Forces. All military.❤️ Women. Proud Dad. My boY!! Let's GO!!
 - 
-- Triple Degrees: Eng. Design & Drafting. IT/Network Systems Administrator. C# Software Developer
+- Triple Degrees: Eng. Design & Drafting. IT/Network Systems Administrator. C# Software Developer (Microsoft certification)
 - Self-taught coder. Self-Learner.
 - Determination. Dedication. Commitment.
 - Quickly, excels in anything I set my mind to and tackle. I'm a DO'er and DON'T need ChatGPT nor my hand held. 😄
@@ -18,7 +18,8 @@
 
 - ➡️ JOIN THE DISCORD: Tigers Brawl
 
-- 😄 Pronouns: ... Guy Dude MAN
+- 😄 Pronouns: ... Guy Dude MAN and Hey YOU?
+- 
 - ⚡ Fun fact: ... “The elevator to success is out of order. You’ll have to use the stairs, one step at a time.” — Joe Girard"  ¯\_(ツ)_/¯
 - ⚡ Fun fact: "The worst part of COFFEE... is AN empty cup !!"
 - ⚡ Fun fact: "True knowledge exists in knowing that you know nothing"- Socrates.
