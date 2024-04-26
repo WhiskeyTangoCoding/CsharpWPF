@@ -4,7 +4,7 @@
 - Triple Degrees: Eng. Design & Drafting. IT/Network Systems Administrator. C# Software Developer
 - Self-taught coder. Self-Learner.
 - Determination. Dedication. Commitment.
-- Quickly, excels in anything I set my mind to and tackle. I'm a DO'er and DON'T need ChatGPT nor my hand held to get projects started.
+- Quickly, excels in anything I set my mind to and tackle. I'm a DO'er and DON'T need ChatGPT nor my hand held. 😄
 - 
 - 👀 I’m interested in ... Programming and Design
 - 🆚 I’m currently learning ... C++ C# WinForm WPF XAML
