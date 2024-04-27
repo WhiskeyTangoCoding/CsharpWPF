@@ -17,7 +17,7 @@ Let’s have a look at a simple example of one-way data binding.
 The following XAML code creates four text blocks with some properties.
 
 <Window x:Class="FirstWPFApp.MainWindow"
-... just some http and some other pre-built code ...
+... just some http and other pre-built code ...
 
 	  xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d" Title="MainWindow" Height="350" Width="604">
@@ -37,8 +37,7 @@ The following XAML code creates four text blocks with some properties.
         </StackPanel>
 
     </Grid>
-    
-    
+        
 </Window>
 
 /*====================================================    | GENERAL NOTES |    ======================================================*/
@@ -47,14 +46,9 @@ The following XAML code creates four text blocks with some properties.
 ** Add New Folder called Classes in Solution Explorer.
 TIP: Create an Employee... class within this folder
 
-FirstWPFApp (Windows Presentation Foundation)		R.click
-** Add > New item...		Class
+FirstWPFApp (Windows Presentation Foundation)		R.click 	** Add > New item...		Class
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // ---	
 /*===============================================    Code Referencing Above    ======================================================*/
