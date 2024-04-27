@@ -1,0 +1,181 @@
+
+//--- What is data?
+
+-In software development, data is essentially a value that is stored in the computer's memory as a series of bits.
+-A bit is a simple binary switch represented as a 0 or 1, or rather, "off" and "on." A single bit doesn't seem useful,
+ however when you combine 8 bits together in a sequence, they form a byte. When used in a byte, each bit takes on a meaning in the sequence.
+-In fact, you can represent 256 different combinations with just 8 bits if you use a binary (base-2) numeral system.
+
+For example, in a binary numeral system, you can represent the number 195 as 11000011.
+
+128	64	32	16	8	4	2	1
+1	  1	  0	  0	  0	0	1	1
+
+If you add up the number from each column in the first row that corresponds to a 1 in the second row, you get the decimal equivalent to
+the binary numeral system representation. In this case, it would be 128 + 64 + 2 + 1 = 195.
+
+
+//--- What about textual data?
+
+ASCII values and their decimal equivalents. 
+
+128	64	32	16	8	4	2	1
+0	  1	  1	  0	  0	0	0	1
+
+Since 64 + 32 + 1 = 97, the 8-bit binary ASCII code for a is 01100001.
+
+
+//--- What is a data type?
+A data type is a way a programming language defines how much memory to save for a value.
+
+//--- Value vs. reference types
+
+-Variables of reference types store references to their data (objects), that is they point to data values stored somewhere else.
+-In comparison, variables of value types directly contain their data. As you learn more about C#, new details emerge related to the
+ fundamental difference between value and reference types.
+
+
+//--- Simple value types
+
+-Simple value types are a set of predefined types provided by C# as keywords. These keywords are aliases (a nickname) for predefined types
+ defined in the .NET Class Library. For example, the C# keyword int is an alias of a value type defined in the .NET Class Library as System.Int32.
+-Simple value types include many of the data types that you may have used already like char and bool.
+-There are also many integral and floating-point value types to represent a wide range of whole and fractional numbers.
+
+
+//---
+-Values are stored as bits, which are simple on / off switches.
+-Combining enough of these switches allows you to store just about any possible value.
+-There are two basic categories of data types: value and reference types.
+-The difference is in how and where the values are stored by the computer as your program executes.
+-Simple value types use a keyword alias to represent formal names of types in the .NET Library.
+
+
+//--- Use the MinValue and MaxValue properties for each signed integral type
+
+Console.WriteLine("Signed integral types:");
+
+Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+
+
+//--- Unsigned integral types
+
+Console.WriteLine("");
+Console.WriteLine("Unsigned integral types:");
+
+Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+
+-An integral type is a simple value data type that can hold whole numbers.
+-There are signed and unsigned numeric data types. Signed integral types use 1 bit to store whether the value is positive or negative.
+-You can use the MaxValue and MinValue properties of numeric data types to evaluate whether a number can fit in a given data type.
+
+
+//--- Use the MinValue and MaxValue properties for each signed float type
+
+Console.WriteLine("");
+Console.WriteLine("Floating point types:");
+Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
+
+-A floating-point type is a simple value data type that can hold fractional numbers.
+
+-Choosing the right floating-point type for your application requires you to consider more than just the maximum and minimum values
+ that it can hold. You must also consider how many values can be preserved after the decimal, how the numbers are stored, and
+ how their internal storage affects the outcome of math operations.
+
+-Floating-point values can sometimes be represented using "E notation" when the numbers grow especially large.
+-There's a fundamental difference in how the compiler and runtime handle decimal as opposed to float or double,
+ especially when determining how much accuracy is necessary from math operations.
+
+Which is the best data type to use to process banking deposits?
+Decimal
+
+
+//--- How reference types are different from value types
+
+-A value type variable stores its values directly in an area of storage called the stack.
+-The stack is memory allocated to the code that is currently running on the CPU (also known as the stack frame, or activation frame).
+-When the stack frame has finished executing, the values in the stack are removed.
+
+in x = 5; 	// (on the stack)
+
+-A reference type variable stores its values in a separate memory region called the heap.
+-The heap is a memory area that is shared across many applications running on the operating system at the same time.
+
+-The .NET Runtime communicates with the operating system to determine what memory addresses are available, and requests an address where
+ it can store the value. The .NET Runtime stores the value, and then returns the memory address to the variable.
+-When your code uses the variable, the .NET Runtime seamlessly looks up the address stored in the variable, and retrieves the value that's stored there.
+
+// a new instance of a reference type
+int[] data = new int[3]; 	// (on the heap)
+
+
+//--- What's different about the C# string data type?
+
+-The string data type is also a reference type.
+-You might be wondering why a new operator wasn't used when declaring a string.
+-This is purely a convenience afforded by the designers of C#. Because the string data type is used so frequently, you can use this format:
+
+string shortenedString = "Hello World!";
+Console.WriteLine(shortenedString);
+
+
+//--- Recap
+
+-Value types can hold smaller values and are stored in the stack.
+-Reference types can hold large values, and a new instance of a reference type is created using the new operator.
+-Reference type variables hold a reference (the memory address) to the actual value stored in the heap.
+-Reference types include arrays, strings, and classes.
+
+
+//--- When in doubt, stick with the basics
+
+While you've looked at several considerations, as you're getting started, for simplicity's sake you should prefer
+a subset of basic data types, including:
+
+-int for most whole numbers
+-decimal for numbers representing money
+-bool for true or false values
+-string for alphanumeric value
+
+
+//--- Choose specialty complex types for special situations
+
+** Don't reinvent data types if one or more data type already exists for a given purpose.
+The following examples identify where a specific .NET data types can be useful:
+
+-byte: working with encoded data that comes from other computer systems or using different character sets.
+-double: working with geometric or scientific purposes. double is used frequently when building games involving motion.
+-System.DateTime for a specific date and time value.
+-System.TimeSpan for a span of years / months / days / hours / minutes / seconds / milliseconds.
+
+//---
+
+Q: A piece of code must store whole numeric values between negative and positive 1,000,000. Which is the best data type to be used? 
+A: int
+
+
+Q: The code for a game needs to store lots of fractional values representing x, y, and z positions in a large 3D space.
+A: float
+
+
+Q: Which of the following statements is true? 
+A: Use the new operator to create a new instance of a reference type and return its address to the variable.
+
+
+//---
+
+
+
+
+
+
+
+//---
