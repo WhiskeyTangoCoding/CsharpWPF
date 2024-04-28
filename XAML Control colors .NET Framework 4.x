@@ -1,3 +1,6 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
 <!-- ** NOTE Below - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
 
 <!--Control colors.-->
