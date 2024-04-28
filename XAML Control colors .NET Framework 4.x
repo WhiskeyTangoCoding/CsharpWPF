@@ -19,7 +19,6 @@
 <Color x:Key="ControlMouseOverColor">#FF3843C4</Color>
 <Color x:Key="ControlPressedColor">#FF211AA9</Color>
 
-
 <Color x:Key="GlyphColor">#FF444444</Color>
 <Color x:Key="GlyphMouseOver">sc#1, 0.004391443, 0.002428215, 0.242281124</Color>
 
