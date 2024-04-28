@@ -1,0 +1,53 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ** NOTE Below - Color swatches by function for VS controls Light Theme -->
+
+    <SolidColorBrush x:Key="DefaultStatusBarBackgroundLT">#FF007ACC</SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultMenuBackgroundLT">#FFF6F6F6</SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultMenuSubmenuGlyphsLT">#FF717171</SolidColorBrush>
+    
+    <SolidColorBrush x:Key="FocusedToolWindowTitleBarLT">#FF007ACC</SolidColorBrush>
+    <SolidColorBrush x:Key="FocusedToolWindowTitleBarBackgroundLT">#FF007ACC</SolidColorBrush>
+
+    <SolidColorBrush x:Key="MenuBarMenuSeparatorsLT">#FFE0E3E6</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuIconChannelBackgroundLT">#FFF6F6F6</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemsBackgroundHoverLT">#FFC9DEF5</SolidColorBrush>
+
+    <!-- MenuItem Control Template Static Light Theme -->
+    <SolidColorBrush x:Key="MenuItemStaticBackgroundLT">#FFF0F0F0</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticBorderLT">#FF999999</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticForegroundLT">#FF212121</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticSeparatorLT">#FFD7D7D7</SolidColorBrush>
+
+    <!-- MenuItem Menu Control Template Disabled Light Theme -->
+    <SolidColorBrush x:Key="MenuItemForegroundDisabledLT">#FF707070</SolidColorBrush>
+
+    <!-- MenuItem Menu Control Template Selected Light Theme -->
+    <SolidColorBrush x:Key="MenuItemForegroundSelectedLT">#3D26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBorderSelectedLT">#FF26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBackgroundHighlightLT">#3D26A0DA</SolidColorBrush>
+
+    <SolidColorBrush x:Key="MenuItemBorderHighlightLT">#FF26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBackgroundHighlightDisabledLT">#0A000000</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBorderHighlightDisabledLT">#21000000</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ToolWindowBackgroundColorLT">#FFF5F5F5</SolidColorBrush>
+    <SolidColorBrush x:Key="TitleMenuCommandbarBackgroundColorLT">#FFEEEEF2</SolidColorBrush>
+    <SolidColorBrush x:Key="TitlebarDragHandleColorLT">#FF999999</SolidColorBrush>
+
+    <SolidColorBrush x:Key="BordersSeparatorsMouseDownLT">#FF007ACC</SolidColorBrush>
+    <SolidColorBrush x:Key="MostTextColorSwatchesLT">#FF1E1E1E</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledTextColorSwatchesLT">#FFA2A4A5</SolidColorBrush>
+
+    <SolidColorBrush x:Key="PressedScrollbarThumbColorLT">#FF6A6A6A</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarArrowsBackgroundDefaultDisabledLT">#FFF5F5F5</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarThumbBackgroundBorderHoverLT">#FF888888</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ScrollbarThumbBackgroundBorderMouseDownLT">#FF6A6A6A</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarThumbDefaultBackgroundBorderLT">#FFDEDFE7</SolidColorBrush>
+
+    <!--Control-specific resources -->
+    <SolidColorBrush x:Key="StopErrorColorSwatchesLT">#FFE51400</SolidColorBrush>
+
+    <!-- ** NOTE Above - Color swatches by function for VS controls Light Theme --> 
