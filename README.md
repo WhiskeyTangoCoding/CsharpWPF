@@ -2,8 +2,8 @@
 - Educated. Titled CET, NSA/IT. C++ C# Coder. Teaching. LIVE Streamer. Martial Artist. Pro-Forces. All military.❤️ Women. Proud Dad. My boY!! Let's GO!!
 - 
 - Triple Degrees: Eng. Design & Drafting. IT/Network Systems Administrator. C# Software Developer
-- Self-taught coder. Self-Learner.
-- Determination. Dedication. Commitment.
+- Self-taught coder. Self-Motivated.                    "I strive to Desire - I desire to Strive"
+- Determination. Dedication. Commitment. Satisfaction.
 - Quickly, excels in anything I set my mind to and tackle. I'm a DO'er and DON'T need ChatGPT nor my hand held. 😄
 - 
 - 👀 I’m interested in ... Programming and Design
