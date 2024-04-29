@@ -74,8 +74,8 @@ Console.WriteLine(friends.Replace("Daniel", "Frank"));   // Replace old string D
 Console.WriteLine(friends);
 
 /*Hello, World!
-My friends are Frank and Spencer
-My friends are Daniel and Spencer*/
+My friends are Daniel and Steven
+My friends are Daniel and Frank*/
 
 // ** Strings in .NET are 'immutable' which means you can't change the contents of the original string
 // Replace only returns the change on a single line Console.WriteLine();
@@ -85,7 +85,7 @@ friends = friends.Replace("Daniel", "Frank");
 Console.WriteLine(friends);
 
 /* Returns
- * My friends are Frank and Scott*/
+ * My friends are Frank and Steven*/
 
 ---
 string firstFriend = "Daniel";
@@ -100,13 +100,13 @@ Console.WriteLine(friends.ToUpper());
 Console.WriteLine(friends);
 
 /*MY FRIENDS ARE DANIEL AND SPENCER
-My friends are David and Scott*/
+My friends are Daniel and Spencer*/
 // Immutable not permanently changed or mutated (changes are only returned on one single line)
 
 Console.WriteLine(friends.Length);
 // Returns 30
 
-Console.WriteLine(friends.StartsWith("Sco"));
+Console.WriteLine(friends.StartsWith("Spe"));
 // Returns False		Because the string begins with My
 
 Console.WriteLine(friends.StartsWith("My "));
