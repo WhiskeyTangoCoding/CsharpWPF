@@ -6,7 +6,7 @@
 
 //--- C# Basics - Strings General line coding
 
-// Hello World, Introducing Strings! [Pt 4] | C# for Beginners
+// Hello World, Introducing Strings! [Pt 4] |C# for Beginners
 // The Basics of Strings! [Pt 5] | C# for Beginners
 // Searching Strings [Pt 6] | C# for Beginners
 
@@ -15,8 +15,8 @@ Console.WriteLine(sayHello);
 
 // 
 
-string firstFriend = "David";
-string secondFriend = "Scott";
+string firstFriend = "Daniel";
+string secondFriend = "Steven";
 
 // For string concatenation
 Console.WriteLine("My friends are " + firstFriend + " and " + secondFriend);
@@ -47,7 +47,7 @@ Console.WriteLine($"[{trimmedGreeting}]");
 string firstFriend = "      David       ";
 string secondFriend = "     Scott       ";
 
-firstFriend = firstFriend.TrimStart().TrimEnd();    // 'chaining' of Methods
+firstFriend = firstFriend.TrimStart().TrimEnd();    // **   "chaining" of Methods
 Console.WriteLine($"My friends are {firstFriend} and {secondFriend.Trim()}");  // $ string interpolation
 
 // Quick keys: To highlight all text in a single line. Press SHIFT + down arrow
