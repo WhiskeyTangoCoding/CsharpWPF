@@ -70,7 +70,7 @@ string secondFriend = "Steven";
 
 string friends = $"My friends are {firstFriend} and {secondFriend}";
 
-Console.WriteLine(friends.Replace("David", "Frank"));   // Replace old string David with new string Frank
+Console.WriteLine(friends.Replace("Daniel", "Frank"));   // Replace old string Daniel with new string Frank
 Console.WriteLine(friends);
 
 /*Hello, World!
