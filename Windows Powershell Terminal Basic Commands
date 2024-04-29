@@ -57,3 +57,7 @@ Run VS Code and trust.
 dotnet new console -n NumbersInCSharp -object .
 
 PS C:\code>\helloworld> clear	// clears the screen
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
