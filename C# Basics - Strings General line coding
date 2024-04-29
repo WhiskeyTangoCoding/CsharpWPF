@@ -44,8 +44,8 @@ Console.WriteLine($"[{trimmedGreeting}]");
 [Hello World!]*/
 
 ---
-string firstFriend = "      David       ";
-string secondFriend = "     Scott       ";
+string firstFriend = "      Daniel       ";
+string secondFriend = "     Steven       ";
 
 firstFriend = firstFriend.TrimStart().TrimEnd();    // **   "chaining" of Methods
 Console.WriteLine($"My friends are {firstFriend} and {secondFriend.Trim()}");  // $ string interpolation
@@ -65,8 +65,8 @@ Console.WriteLine(sayHello);
 Greetings, World!*/
 
 ---
-string firstFriend = "David";
-string secondFriend = "Scott";
+string firstFriend = "Daniel";
+string secondFriend = "Steven";
 
 string friends = $"My friends are {firstFriend} and {secondFriend}";
 
@@ -74,32 +74,32 @@ Console.WriteLine(friends.Replace("David", "Frank"));   // Replace old string Da
 Console.WriteLine(friends);
 
 /*Hello, World!
-My friends are Frank and Scott
-My friends are David and Scott*/
+My friends are Frank and Spencer
+My friends are Daniel and Spencer*/
 
 // ** Strings in .NET are 'immutable' which means you can't change the contents of the original string
 // Replace only returns the change on a single line Console.WriteLine();
 
 // To make the change a permanent change (assigned explicitly)
-friends = friends.Replace("David", "Frank");
+friends = friends.Replace("Daniel", "Frank");
 Console.WriteLine(friends);
 
 /* Returns
  * My friends are Frank and Scott*/
 
 ---
-string firstFriend = "David";
-string secondFriend = "Scott";
+string firstFriend = "Daniel";
+string secondFriend = "Spencer";
 
 string friends = $"My friends are {firstFriend} and {secondFriend}";
 
-Console.WriteLine(friends.Contains("David"));
+Console.WriteLine(friends.Contains("Daniel"));
 // Returns True
 
 Console.WriteLine(friends.ToUpper());
 Console.WriteLine(friends);
 
-/*MY FRIENDS ARE DAVID AND SCOTT
+/*MY FRIENDS ARE DANIEL AND SPENCER
 My friends are David and Scott*/
 // Immutable not permanently changed or mutated (changes are only returned on one single line)
 
