@@ -1,0 +1,58 @@
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Windows Powershell Terminal (Run as Administrator)
+
+
+TYPE: Windows Powershell Terminal
+
+PS C:\Users\username> cd C:\code\
+PS C:\code> dir
+PS C:\code> mkdir helloworld		// Make a directory
+
+	Directory: C: C:\code>
+Mode		LastWriteTime		Length	Name
+
+PS C:\code> cd .\helloworld
+PS C:\code>\helloworld> dir
+PS C:\code>\helloworld> dotnet		// dotnet is a command line tool (create projects, run applications
+					// One entry point aplication CLI (Command line interface)
+PS C:\code>\helloworld>
+PS C:\code>\helloworld> dotnet new	// Common templates: Template name 	Short Name	Language	Tags
+					// Console App ie. Text mode application
+
+PS C:\code>\helloworld> dir
+PS C:\code>\helloworld> dotnet new console
+
+PS C:\code>\helloworld>
+PS C:\code>\helloworld> dir		// Mode		LastWriteTime		Length	Name
+											obj	(supporting file)
+										252	hellowworld.csproj
+										105	Program.cs (basically same as C++ main)
+
+// To run
+PS C:\code>\helloworld> dotnet run	// Compiles application, creates the output, then run program (in Windows Powershell)
+Hello, World!
+PS C:\code>\helloworld> dir		// Mode		LastWriteTime		Length	Name
+											bin	(binaries)
+											obj	(supporting file)
+										252	hellowworld.csproj
+										105	Program.cs (basically same as C++ main)
+
+// Can also look at this in notepad
+PS C:\code>\helloworld> notepad
+// VS Code. Since we are already in the Terminal, type
+PS C:\code>\helloworld> code .		// To launch VS code directly. To launch in folder we are in type code (space) . (dot)
+Run VS Code and trust.
+
+// Go to Microsoft Edge Browser. Type dot.net
+
+** IMPORTANT !! If you are going to write code in VS Code then use the Windows Powershell Terminal to run the application.
+** Make CERTAIN that you SAVE (Ctrl + S) the edited line code in VS Code first.
+
+// Create a directory named numbers-quickstart. Make it the current directory and run the following command:
+dotnet new console -n NumbersInCSharp -object .
+
+PS C:\code>\helloworld> clear	// clears the screen
