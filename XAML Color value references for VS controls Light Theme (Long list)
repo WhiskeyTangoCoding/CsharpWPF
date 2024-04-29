@@ -1,3 +1,18 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+//---  C# WPF Programming #06 - ColorControls | WPF & XAML | - Windows Presentation Foundation (.NET Framework)
+
+A. Solution Explorer. Add New Folder ControlStandrds (** No spaces allowed)   R.Click folder > Add New Item... 
+B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
+
+
+//--- XAML programming		(XAML code)		** XAML - Basics		
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+<!--  ** ONLY the code BELOW needs to be COPY & PASTED --> 
+
+
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
