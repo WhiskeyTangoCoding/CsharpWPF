@@ -20,249 +20,372 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <!-- ** NOTE Below - These are Color value references for VS controls Light Theme ** -->
 
     <!-- Properties window Divider Lines Light Theme -->
-    <SolidColorBrush x:Key="PropertiesWindowDividerLineLT" Color="#FFEEEEF2"/>
+    <SolidColorBrush x:Key="PropertiesWindowDividerLine" Color="#FFEEEEF2"/>
 
     <!-- PROPERTIES TABs -->
     <!-- Properties window Embedded tab control: body Light Theme -->
-    <SolidColorBrush x:Key="EmbeddedTabForegroundBodyLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="EmbeddedTabBackgroundBodyLT" Color="#FFE7E8EC"/>
-    <SolidColorBrush x:Key="EmbeddedTabBorderBodyLT" Color="#FFE7E8EC"/>
+    <SolidColorBrush x:Key="EmbeddedTabForegroundBody" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="EmbeddedTabBackgroundBody" Color="#FFE7E8EC"/>
+    <SolidColorBrush x:Key="EmbeddedTabBorderBody" Color="#FFE7E8EC"/>
 
     <!-- Properties window Embedded tab control: active tab Light Theme -->
-    <SolidColorBrush x:Key="EmbeddedTabForegroundActiveLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="EmbeddedTabBackgroundActiveLT" Color="#FFE7E8EC"/>
-    <SolidColorBrush x:Key="EmbeddedTabBorderActiveLT" Color="#FFE7E8EC"/>
+    <SolidColorBrush x:Key="EmbeddedTabForegroundActive" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="EmbeddedTabBackgroundActive" Color="#FFE7E8EC"/>
+    <SolidColorBrush x:Key="EmbeddedTabBorderActive" Color="#FFE7E8EC"/>
 
     <!-- Properties window Embedded tab control: inactive tab Light Theme -->
-    <SolidColorBrush x:Key="EmbeddedTabForegroundInactiveLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="EmbeddedTabBackgroundInactiveLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="EmbeddedTabForegroundInHoverLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="EmbeddedTabBackgroundInHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="EmbeddedTabForegroundInDisabledLT" Color="#FFA2A4A5"/>
-    <SolidColorBrush x:Key="EmbeddedTabBackgroundInDisabledLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="EmbeddedTabBorderInactiveLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="EmbeddedTabBorderHoverInactiveLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="EmbeddedTabBorderInDisabledLT" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="EmbeddedTabForegroundInactive" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="EmbeddedTabBackgroundInactive" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="EmbeddedTabForegroundInHover" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="EmbeddedTabBackgroundInHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="EmbeddedTabForegroundInDisabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="EmbeddedTabBackgroundInDisabled" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="EmbeddedTabBorderInactive" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="EmbeddedTabBorderHoverInactive" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="EmbeddedTabBorderInDisabled" Color="#FFF5F5F5"/>
 
 
     <!-- PROPERTIES HEADER -->
     <!-- Properties window Section header Light Theme -->
-    <SolidColorBrush x:Key="SectionHeaderForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="SectionHeaderForegroundHoverLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="SectionHeaderBackgroundLT" Color="#FFEEEEF2"/>
-    <SolidColorBrush x:Key="SectionHeaderBackgroundHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="SectionHeaderBorderLT" Color="Transparent"/>
-    <SolidColorBrush x:Key="SectionHeaderBorderHoverLT" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="SectionHeaderForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="SectionHeaderForegroundHover" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="SectionHeaderBackground" Color="#FFEEEEF2"/>
+    <SolidColorBrush x:Key="SectionHeaderBackgroundHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="SectionHeaderBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="SectionHeaderBorderHover" Color="#FFC9DEF5"/>
 
     <!-- Properties window Category group Light Theme -->
-    <SolidColorBrush x:Key="CategoryGroupBodyForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="CategoryGroupBodyBackgroundLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="CategoryGroupGlyphForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="CategoryGroupGlyphForegroundHoverLT" Color="#FF007ACC"/>
+    <SolidColorBrush x:Key="CategoryGroupBodyForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="CategoryGroupBodyBackground" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="CategoryGroupGlyphForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="CategoryGroupGlyphForegroundHover" Color="#FF007ACC"/>
 
 
     <!-- PROPERTIES TOGGLE -->
     <!-- Properties window Toggle Buttons Light Theme -->
-    <SolidColorBrush x:Key="ToggleButtonForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ToggleButtonBackgroundLT" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="ToggleButtonForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ToggleButtonBackground" Color="#FFF5F5F5"/>
 
-    <SolidColorBrush x:Key="ToggleButtonForegroundHoverLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ToggleButtonBackgroundHoverLT" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="ToggleButtonForegroundHover" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ToggleButtonBackgroundHover" Color="#FFC9DEF5"/>
 
-    <SolidColorBrush x:Key="ToggleButtonForegroundSelectedLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ToggleButtonBackgroundSelectedLT" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="ToggleButtonForegroundSelected" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ToggleButtonBackgroundSelected" Color="#FFF5F5F5"/>
 
-    <SolidColorBrush x:Key="ToggleButtonForegroundDisabledLT" Color="#FFA2A4A5"/>
-    <SolidColorBrush x:Key="ToggleButtonBackgroundDisabledLT" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="ToggleButtonForegroundDisabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="ToggleButtonBackgroundDisabled" Color="#FFF5F5F5"/>
 
-    <SolidColorBrush x:Key="ToggleButtonBorderLT" Color="#FFCCCEDB"/>
-    <SolidColorBrush x:Key="ToggleButtonBorderHoverLT" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="ToggleButtonBorder" Color="#FFCCCEDB"/>
+    <SolidColorBrush x:Key="ToggleButtonBorderHover" Color="#FFC9DEF5"/>
 
-    <SolidColorBrush x:Key="ToggleButtonBorderSelectedLT" Color="#FF007ACC"/>
-    <SolidColorBrush x:Key="ToggleButtonBorderDisabledLT" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="ToggleButtonBorderSelected" Color="#FF007ACC"/>
+    <SolidColorBrush x:Key="ToggleButtonBorderDisabled" Color="#FFF5F5F5"/>
 
 
     <!-- Properties window Input fields Light Theme -->
-    <SolidColorBrush x:Key="InputFieldForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="InputFieldBackgroundLT" Color="#FFFFFFFF"/>
-    <SolidColorBrush x:Key="InputFieldForegroundDisabledLT" Color="#FFA2A4A5"/>
-    <SolidColorBrush x:Key="InputFieldBackgroundDisabledLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="InputFieldBorderLT" Color="#FFCCCEDB"/>
-    <SolidColorBrush x:Key="InputFieldBorderDisabledLT" Color="#FFCCCEDB"/>
+    <SolidColorBrush x:Key="InputFieldForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="InputFieldBackground" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="InputFieldForegroundDisabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="InputFieldBackgroundDisabled" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="InputFieldBorder" Color="#FFCCCEDB"/>
+    <SolidColorBrush x:Key="InputFieldBorderDisabled" Color="#FFCCCEDB"/>
 
     <!-- Properties window List items Light Theme -->
-    <SolidColorBrush x:Key="ListItemsForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ListItemsForegroundHoverLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ListItemsBackgroundHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="ListItemsForegroundSelectedLT" Color="#FFFFFFFF"/>
-    
-    <SolidColorBrush x:Key="ListItemsBackgroundSelectedLT" Color="#FF3399FF"/>
-    <SolidColorBrush x:Key="ListItemsForegroundDisabledLT" Color="#FFA2A4A5"/>
-    <SolidColorBrush x:Key="ListItemsBorderHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="ListItemsBorderSelectedLT" Color="#FFCCCEDB"/>
+    <SolidColorBrush x:Key="ListItemsForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ListItemsForegroundHover" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ListItemsBackgroundHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="ListItemsForegroundSelected" Color="#FFFFFFFF"/>
+
+    <SolidColorBrush x:Key="ListItemsBackgroundSelected" Color="#FF3399FF"/>
+    <SolidColorBrush x:Key="ListItemsForegroundDisabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="ListItemsBorderHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="ListItemsBorderSelected" Color="#FFCCCEDB"/>
 
     <!-- Properties window Command Buttons Light Theme -->
-    <SolidColorBrush x:Key="CommandButtonForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="CommandButtonBackgroundHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="CommandButtonForegroundSelectedLT" Color="#FFFFFFFF"/>
-    <SolidColorBrush x:Key="CommandButtonBackgroundPressedLT" Color="#FF007ACC"/>
-    
-    <SolidColorBrush x:Key="CommandButtonForegroundDisabledLT" Color="#FFA2A4A5"/>
-    <SolidColorBrush x:Key="CommandButtonBackgroundDisabledLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="CommandButtonBorderHoverLT" Color="#FFC9DEF5"/>
-    <SolidColorBrush x:Key="CommandButtonBorderPressedLT" Color="#FF007ACC"/>
-    <SolidColorBrush x:Key="CommandButtonBorderDisabledLT" Color="#FFCCCEDB"/>
+    <SolidColorBrush x:Key="CommandButtonForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="CommandButtonBackgroundHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="CommandButtonForegroundSelected" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CommandButtonBackgroundPressed" Color="#FF007ACC"/>
+
+    <SolidColorBrush x:Key="CommandButtonForegroundDisabled" Color="#FFA2A4A5"/>
+    <SolidColorBrush x:Key="CommandButtonBackgroundDisabled" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="CommandButtonBorderHover" Color="#FFC9DEF5"/>
+    <SolidColorBrush x:Key="CommandButtonBorderPressed" Color="#FF007ACC"/>
+    <SolidColorBrush x:Key="CommandButtonBorderDisabled" Color="#FFCCCEDB"/>
 
     <!-- Properties grid control elements Content Selected Focused/Unfocused Light Theme -->
-    <SolidColorBrush x:Key="ContentForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ContentBackgroundLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="ContentForegroundSFocusedLT" Color="#FFFFFFFF"/>
-    <SolidColorBrush x:Key="ContentBackgroundSFocusedLT" Color="#FF3399FF"/>
-    <SolidColorBrush x:Key="ContentForegroundSUnfocusedLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ContentBackgroundSUnfocusedLT" Color="#FFEEEEF2"/>
-    <SolidColorBrush x:Key="ContentDividerLinesLT" Color="#FFEEEEF2"/>
+    <SolidColorBrush x:Key="ContentForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ContentBackground" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="ContentForegroundFocused" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ContentBackgroundFocused" Color="#FF3399FF"/>
+    <SolidColorBrush x:Key="ContentForegroundUnfocused" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ContentBackgroundUnfocused" Color="#FFEEEEF2"/>
+    <SolidColorBrush x:Key="ContentDividerLines" Color="#FFEEEEF2"/>
 
     <!-- Properties grid control elements Header Light Theme -->
-    <SolidColorBrush x:Key="ElementsHeaderForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="ElementsHeaderBackgroundLT" Color="#FFEEEEF2"/>
+    <SolidColorBrush x:Key="ElementsHeaderForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="ElementsHeaderBackground" Color="#FFEEEEF2"/>
 
     <!-- GRID -->
     <!-- Grid control Body Light Theme -->
-    <SolidColorBrush x:Key="GridCBodyForegroundLT" Color="#FF1E1E1E"/>
-    <SolidColorBrush x:Key="GridCBodyForegroundSelectedLT" Color="#FFFFFFFF"/>
-    
+    <SolidColorBrush x:Key="GridCBodyForeground" Color="#FF1E1E1E"/>
+    <SolidColorBrush x:Key="GridCBodyForegroundSelected" Color="#FFFFFFFF"/>
+
     <!-- Grid control Subsection header Light Theme -->
-    <SolidColorBrush x:Key="GridCSubHeaderForegroundLT" Color="#FF717171"/>
-    <SolidColorBrush x:Key="GridCSubHeaderBackgroundLT" Color="#FFF5F5F5"/>
-    <SolidColorBrush x:Key="GridCSubHeaderBackgroundSelectedLT" Color="#FF3399FF"/>
+    <SolidColorBrush x:Key="GridCSubHeaderForeground" Color="#FF717171"/>
+    <SolidColorBrush x:Key="GridCSubHeaderBackground" Color="#FFF5F5F5"/>
+    <SolidColorBrush x:Key="GridCSubHeaderBackgroundSelected" Color="#FF3399FF"/>
 
     <!-- Grid control Grid lines Light Theme -->
-    <SolidColorBrush x:Key="GridCLinesForegroundLT" Color="#FFF0F0F0"/>
-    <SolidColorBrush x:Key="GridCLinesHeaderForegroundLT" Color="#FFE0E3E6"/>
+    <SolidColorBrush x:Key="GridCLinesForeground" Color="#FFF0F0F0"/>
+    <SolidColorBrush x:Key="GridCLinesHeaderForeground" Color="#FFE0E3E6"/>
 
 
     <!-- BUTTONS -->
     <!-- Button controls Default Light Theme -->
-    <SolidColorBrush x:Key="BtnControlsDefaultForegroundLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="BtnControlsDefaultBackgroundLT" Color="#ECECF0"/>
-    <SolidColorBrush x:Key="BtnControlsDefaultBorderLT" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="BtnControlsDefaultForeground" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="BtnControlsDefaultBackground" Color="#ECECF0"/>
+    <SolidColorBrush x:Key="BtnControlsDefaultBorder" Color="#CCCEDB"/>
 
     <!-- Button controls Disabled Light Theme -->
-    <SolidColorBrush x:Key="BtnControlsForegroundDisabledLT" Color="#A2A4A5"/>
-    <SolidColorBrush x:Key="BtnControlsBackgroundDisabledLT" Color="#F5F5F5"/>
-    <SolidColorBrush x:Key="BtnControlsBorderDisabledLT" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="BtnControlsForegroundDisabled" Color="#A2A4A5"/>
+    <SolidColorBrush x:Key="BtnControlsBackgroundDisabled" Color="#F5F5F5"/>
+    <SolidColorBrush x:Key="BtnControlsBorderDisabled" Color="#CCCEDB"/>
 
     <!-- Button controls Hover Light Theme -->
-    <SolidColorBrush x:Key="BtnControlsForegroundHoverLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="BtnControlsBackgroundHoverLT" Color="#C9DEF5"/>
-    <SolidColorBrush x:Key="BtnControlsBorderHoverLT" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="BtnControlsForegroundHover" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="BtnControlsBackgroundHover" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="BtnControlsBorderHover" Color="#CCCEDB"/>
 
     <!-- Button controls Pressed Light Theme -->
-    <SolidColorBrush x:Key="BtnControlsForegroundPressedLT" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="BtnControlsBackgroundPressedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="BtnControlsBorderPressedLT" Color="#007ACC"/>
+    <SolidColorBrush x:Key="BtnControlsForegroundPressed" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="BtnControlsBackgroundPressed" Color="#007ACC"/>
+    <SolidColorBrush x:Key="BtnControlsBorderPressed" Color="#007ACC"/>
 
     <!-- Button controls Focused Light Theme -->
-    <SolidColorBrush x:Key="BtnControlsForegroundFocusedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="BtnControlsBackgroundFocusedLT" Color="#C9DEF5"/>
-    <SolidColorBrush x:Key="BtnControlsBorderFocusedLT" Color="#3399FF"/>
+    <SolidColorBrush x:Key="BtnControlsForegroundFocused" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="BtnControlsBackgroundFocused" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="BtnControlsBorderFocused" Color="#3399FF"/>
+
+    <!-- Button controls STATIC Light Theme -->
+    <SolidColorBrush x:Key="BtnControlsBackgroundStatic" Color="#FFDDDDDD"/>
+    <SolidColorBrush x:Key="BtnControlsBorderStatic" Color="#FF707070"/>
+
+    <SolidColorBrush x:Key="BtnControlsBackgroundMouseOver" Color="#FFBEE6FD"/>
+    <SolidColorBrush x:Key="BtnControlsBorderMouseOver" Color="#FF3C7FB1"/>
+
+    <SolidColorBrush x:Key="BtnCustomBackgroundPressed" Color="#FFC4E5F6"/>
+    <SolidColorBrush x:Key="BtnCustomBorderPressed" Color="#FF2C628B"/>
+
+    <SolidColorBrush x:Key="BtnCustomBackgroundDisabled" Color="#FFF4F4F4"/>
+    <SolidColorBrush x:Key="BtnCustomBorderDisabled" Color="#FFADB2B5"/>
+    <SolidColorBrush x:Key="BtnCustomForegroundDisabled" Color="#FF838383"/>
 
 
     <!-- CHECK BOX -->
     <!-- Check box controls Default Light Theme -->
-    <SolidColorBrush x:Key="CheckboxControlsBackgroundDefaultLT" Color="#FEFEFE"/>
-    <SolidColorBrush x:Key="CheckboxControlsBorderDefaultLT" Color="#717171"/>
-    <SolidColorBrush x:Key="CheckboxControlsTextDefaultLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="CheckboxControlsGlyphDefaultLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsBackgroundDefault" Color="#FEFEFE"/>
+    <SolidColorBrush x:Key="CheckboxControlsBorderDefault" Color="#717171"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextDefault" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsGlyphDefault" Color="#1E1E1E"/>
 
     <!-- Check box controls Disabled Light Theme -->
-    <SolidColorBrush x:Key="CheckboxControlsBackgroundDisabledLT" Color="#F6F6F6"/>
-    <SolidColorBrush x:Key="CheckboxControlsBorderDisabledLT" Color="#C6C6C6"/>
-    <SolidColorBrush x:Key="CheckboxControlsTextDisabledLT" Color="#A2A4A5"/>
-    <SolidColorBrush x:Key="CheckboxControlsGlyphDisabledLT" Color="#A2A4A5"/>
+    <SolidColorBrush x:Key="CheckboxControlsBackgroundDisabled" Color="#F6F6F6"/>
+    <SolidColorBrush x:Key="CheckboxControlsBorderDisabled" Color="#C6C6C6"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextDisabled" Color="#A2A4A5"/>
+    <SolidColorBrush x:Key="CheckboxControlsGlyphDisabled" Color="#A2A4A5"/>
 
     <!-- Check box controls Hover Light Theme -->
-    <SolidColorBrush x:Key="CheckboxControlsBackgroundHoverLT" Color="#F3F9FF"/>
-    <SolidColorBrush x:Key="CheckboxControlsBorderHoverLT" Color="#3399FF"/>
-    <SolidColorBrush x:Key="CheckboxControlsTextHoverLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="CheckboxControlsGlyphHoverLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsBackgroundHover" Color="#F3F9FF"/>
+    <SolidColorBrush x:Key="CheckboxControlsBorderHover" Color="#3399FF"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextHover" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsGlyphHover" Color="#1E1E1E"/>
 
     <!-- Check box controls Pressed Light Theme -->
-    <SolidColorBrush x:Key="CheckboxControlsBackgroundPressedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="CheckboxControlsBorderPressedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextPressedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="CheckboxControlsGlyphPressedLT" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="CheckboxControlsBackgroundPressed" Color="#007ACC"/>
+    <SolidColorBrush x:Key="CheckboxControlsBorderPressed" Color="#007ACC"/>
+    <SolidColorBrush x:Key="CheckboxControlsBTextPressed" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsGlyphPressed" Color="#FFFFFF"/>
 
     <!-- Check box controls Focused Light Theme -->
-    <SolidColorBrush x:Key="CheckboxControlsBackgroundFocusedLT" Color="#FDF4BF"/>
-    <SolidColorBrush x:Key="CheckboxControlsBorderFocusedLT" Color="#3399FF"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextFocusedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="CheckboxControlsGlyphFocusedLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsBackgroundFocused" Color="#FDF4BF"/>
+    <SolidColorBrush x:Key="CheckboxControlsBorderFocused" Color="#3399FF"/>
+    <SolidColorBrush x:Key="CheckboxControlsBTextFocused" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsGlyphFocused" Color="#1E1E1E"/>
 
 
     <!-- COMBO BOX / TEXT BOX -->
     <!-- Drop-down / Combo box controls Default Light Theme -->
-    <SolidColorBrush x:Key="ComboboxControlsBackgroundDefaultLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsBorderDefaultLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxControlsSeparatorDefaultLT" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphDefaultLT" Color="#717171"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundDefaultLT" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ComboboxControlsBackgroundDefault" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsBorderDefault" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxControlsSeparatorDefault" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphDefault" Color="#717171"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundDefault" Color="#FFFFFF"/>
 
     <!-- Drop-down / Combo box controls Disabled Light Theme -->
-    <SolidColorBrush x:Key="ComboboxControlsBackgroundDisabledLT" Color="#EEEEF2"/>
-    <SolidColorBrush x:Key="ComboboxControlsBorderDisabledLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxControlsTextDisabledLT" Color="#A2A4A5"/>
-    <SolidColorBrush x:Key="ComboboxControlsSeparatorDisabledLT" Color="#EEEEF2"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphDisabledLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundDisabledLT" Color="#EEEEF2"/>
+    <SolidColorBrush x:Key="ComboboxControlsBackgroundDisabled" Color="#EEEEF2"/>
+    <SolidColorBrush x:Key="ComboboxControlsBorderDisabled" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxControlsTextDisabled" Color="#A2A4A5"/>
+    <SolidColorBrush x:Key="ComboboxControlsSeparatorDisabled" Color="#EEEEF2"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphDisabled" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundDisabled" Color="#EEEEF2"/>
 
     <!-- Drop-down / Combo box controls Hover Light Theme -->
-    <SolidColorBrush x:Key="ComboboxControlsBackgroundHoverLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsBorderHoverLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsTextHoverLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxControlsSeparatorHoverLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphHoverLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundHoverLT" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="ComboboxControlsBackgroundHover" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsBorderHover" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsTextHover" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxControlsSeparatorHover" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphHover" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundHover" Color="#C9DEF5"/>
 
     <!-- Drop-down / Combo box controls Pressed Light Theme -->
-    <SolidColorBrush x:Key="ComboboxControlsBackgroundPressedLT" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="ComboboxControlsBorderPressedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsTextPressedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxControlsSeparatorPressedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphPressedLT" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundPressedLT" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsBackgroundPressed" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ComboboxControlsBorderPressed" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsTextPressed" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxControlsSeparatorPressed" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphPressed" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundPressed" Color="#007ACC"/>
 
     <!-- Drop-down / Combo box controls Focused Light Theme -->
-    <SolidColorBrush x:Key="ComboboxControlsBackgroundFocusedLT" Color="#FFFFFF"/>
-    <SolidColorBrush x:Key="ComboboxControlsBorderFocusedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsTextFocusedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxControlsSeparatorFocusedLT" Color="#007ACC"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphFocusedLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundFocusedLT" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="ComboboxControlsBackgroundFocused" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ComboboxControlsBorderFocused" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsTextFocused" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxControlsSeparatorFocused" Color="#007ACC"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphFocused" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxControlsGlyphBackgroundFocused" Color="#C9DEF5"/>
 
     <!-- Drop-down / Combo box List (appears on press) Default Light Theme -->
-    <SolidColorBrush x:Key="ComboboxListBackgroundDefaultLT" Color="#F6F6F6"/>
-    <SolidColorBrush x:Key="ComboboxListBorderDefaultLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxListTextDefaultLT" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="ComboboxListBackgroundShadowDefaultLT" Color="#19000000"/>
+    <SolidColorBrush x:Key="ComboboxListBackgroundDefault" Color="#F6F6F6"/>
+    <SolidColorBrush x:Key="ComboboxListBorderDefault" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxListTextDefault" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxListBackgroundShadowDefault" Color="#19000000"/>
 
     <!-- Drop-down / Combo box List (appears on press) Hover Light Theme -->
-    <SolidColorBrush x:Key="ComboboxListBackgroundHoverLT" Color="#C9DEF5"/>
-    <SolidColorBrush x:Key="ComboboxListBorderHoverLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxListTextHoverLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxListBackgroundHover" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="ComboboxListBorderHover" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxListTextHover" Color="#1E1E1E"/>
 
     <!-- Drop-down / Combo box List (appears on press) Pressed Light Theme -->
-    <SolidColorBrush x:Key="ComboboxListBackgroundPressedLT" Color="#C9DEF5"/>
-    <SolidColorBrush x:Key="ComboboxListBorderPressedLT" Color="#CCCEDB"/>
-    <SolidColorBrush x:Key="ComboboxListTextPressedLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxListBackgroundPressed" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="ComboboxListBorderPressed" Color="#CCCEDB"/>
+    <SolidColorBrush x:Key="ComboboxListTextPressed" Color="#1E1E1E"/>
 
     <!-- Drop-down / Combo box List (appears on press) Focused Light Theme -->
-    <SolidColorBrush x:Key="ComboboxListBackgroundFocusedLT" Color="#F6F6F6"/>
-    <SolidColorBrush x:Key="ComboboxListBorderFocusedLT" Color="#C9DEF5"/>
-    <SolidColorBrush x:Key="ComboboxListTextFocusedLT" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ComboboxListBackgroundFocused" Color="#F6F6F6"/>
+    <SolidColorBrush x:Key="ComboboxListBorderFocused" Color="#C9DEF5"/>
+    <SolidColorBrush x:Key="ComboboxListTextFocused" Color="#1E1E1E"/>
 
     <!-- Drop-down / Combo box List Text Input Selection Light Theme -->
-    <SolidColorBrush x:Key="ComboboxListTextInputSelectionLT" Color="#66007ACC"/>
+    <SolidColorBrush x:Key="ComboboxListTextInputSelection" Color="#66007ACC"/>
 
 
     <!-- ** NOTE Above - These are Color value references for VS controls Light Theme ** -->
+
+    <!-- ** NOTE Below - Color swatches by function for VS controls Light Theme -->
+
+
+    <!-- WINDOW MENU Light Theme -->
+    <SolidColorBrush x:Key="DefaultStatusBarBackground">#FF007ACC</SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultMenuBackground">#FFF6F6F6</SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultMenuSubmenuGlyphs">#FF717171</SolidColorBrush>
+
+    <SolidColorBrush x:Key="FocusedToolWindowTitleBar">#FF007ACC</SolidColorBrush>
+    <SolidColorBrush x:Key="FocusedToolWindowTitleBarBackground">#FF007ACC</SolidColorBrush>
+
+    <SolidColorBrush x:Key="MenuBarMenuSeparators">#FFE0E3E6</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuIconChannelBackground">#FFF6F6F6</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemsBackgroundHover">#FFC9DEF5</SolidColorBrush>
+
+    <!-- MenuItem Control Template Static Light Theme -->
+    <SolidColorBrush x:Key="MenuItemStaticBackground">#FFF0F0F0</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticBorder">#FF999999</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticForeground">#FF212121</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemStaticSeparator">#FFD7D7D7</SolidColorBrush>
+
+    <!-- MenuItem Menu Control Template Disabled Light Theme -->
+    <SolidColorBrush x:Key="MenuItemForegroundDisabled">#FF707070</SolidColorBrush>
+
+    <!-- MenuItem Menu Control Template Selected Light Theme -->
+    <SolidColorBrush x:Key="MenuItemForegroundSelected">#3D26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBorderSelected">#FF26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBackgroundHighlight">#3D26A0DA</SolidColorBrush>
+
+    <SolidColorBrush x:Key="MenuItemBorderHighlight">#FF26A0DA</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBackgroundHighlightDisabled">#0A000000</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuItemBorderHighlightDisabled">#21000000</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ToolWindowBackgroundColor">#FFF5F5F5</SolidColorBrush>
+    <SolidColorBrush x:Key="TitleMenuCommandbarBackgroundColor">#FFEEEEF2</SolidColorBrush>
+    <SolidColorBrush x:Key="TitlebarDragHandleColor">#FF999999</SolidColorBrush>
+
+    <SolidColorBrush x:Key="BordersSeparatorsMouseDown">#FF007ACC</SolidColorBrush>
+
+    <!-- TEXT Light Theme -->
+    <SolidColorBrush x:Key="MostTextColorSwatches">#FF1E1E1E</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledTextColorSwatches">#FFA2A4A5</SolidColorBrush>
+
+
+    <!-- SCROLL BAR Light Theme -->
+    <SolidColorBrush x:Key="PressedScrollbarThumbColor">#FF6A6A6A</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarArrowsBackgroundDefaultDisabled">#FFF5F5F5</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarThumbBackgroundBorderHover">#FF888888</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ScrollbarThumbBackgroundBorderMouseDown">#FF6A6A6A</SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollbarThumbDefaultBackgroundBorder">#FFDEDFE7</SolidColorBrush>
+
+    <!-- ERROR Light Theme -->
+    <!--Control-specific resources -->
+    <SolidColorBrush x:Key="StopErrorColorSwatches">#FFE51400</SolidColorBrush>
+
+    <!-- ** NOTE Above - Color swatches by function for VS controls Light Theme -->
+
+    <!-- ** NOTE Below - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
+
+    <!-- WINDOW CLIENT AREA -->
+    <!--Control colors. Light Theme -->
+    <SolidColorBrush x:Key="ClientAreaWindowColor">#FFE8EDF9</SolidColorBrush>
+    <SolidColorBrush x:Key="ContentAreaColorLight">#FFC5CBF9</SolidColorBrush>
+    <SolidColorBrush x:Key="ContentAreaColorDark">#FF7381F9</SolidColorBrush>
+
+    <SolidColorBrush x:Key="DisabledControlLightColor">#FFE8EDF9</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledControlDarkColor">#FFC5CBF9</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledForegroundColor">#FF888888</SolidColorBrush>
+
+    <SolidColorBrush x:Key="SelectedBackgroundColor">#FFC5CBF9</SolidColorBrush>
+    <SolidColorBrush x:Key="SelectedUnfocusedColor">#FFDDDDDD</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ControlLightColor">White</SolidColorBrush>
+    <SolidColorBrush x:Key="ControlMediumColor">#FF7381F9</SolidColorBrush>
+    <SolidColorBrush x:Key="ControlDarkColor">#FF211AA9</SolidColorBrush>
+
+    <!-- MOUSE Light Theme -->
+    <SolidColorBrush x:Key="ControlMouseOverColor">#FF3843C4</SolidColorBrush>
+    <SolidColorBrush x:Key="ControlPressedColor">#FF211AA9</SolidColorBrush>
+
+    <SolidColorBrush x:Key="GlyphColor">#FF444444</SolidColorBrush>
+    <SolidColorBrush x:Key="GlyphMouseOver">sc#1, 0.004391443, 0.002428215, 0.242281124</SolidColorBrush>
+
+    <!-- BORDERS Light Theme -->
+    <SolidColorBrush x:Key="BorderLightColor">#FFCCCCCC</SolidColorBrush>
+    <SolidColorBrush x:Key="BorderMediumColor">#FF888888</SolidColorBrush>
+    <SolidColorBrush x:Key="BorderDarkColor">#FF444444</SolidColorBrush>
+
+    <SolidColorBrush x:Key="PressedBorderLightColor">#FF888888</SolidColorBrush>
+    <SolidColorBrush x:Key="PressedBorderDarkColor">#FF444444</SolidColorBrush>
+
+    <SolidColorBrush x:Key="DisabledBorderLightColor">#FFAAAAAA</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledBorderDarkColor">#FF888888</SolidColorBrush>
+
+    <SolidColorBrush x:Key="DefaultBorderBrushDarkColor">Black</SolidColorBrush>
+
+    <!-- SPECIFIC Light Theme -->
+    <!--Control-specific resources -->
+    <SolidColorBrush x:Key="HeaderTopColor">#FFC5CBF9</SolidColorBrush>
+    <SolidColorBrush x:Key="DatagridCurrentCellBorderColor">Black</SolidColorBrush>
+    <SolidColorBrush x:Key="SliderTrackDarkColor">#FFC5CBF9</SolidColorBrush>
+
+    <SolidColorBrush x:Key="NavButtonFrameColor">#FF3843C4</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowsTitleBarColor">#357EC7</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowsComplementaryColor">#C77E36</SolidColorBrush>
+
+    <!-- ** NOTE Above - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
