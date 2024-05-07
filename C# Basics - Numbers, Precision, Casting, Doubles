@@ -1,9 +1,10 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
 
+/*====================================================    | GENERAL NOTES |    ======================================================*/
 
-
-
-Numbers, Precision, Casting, Doubles, and More [Pt 8] | C# for Beginners
+//--- Numbers, Precision, Casting, Doubles, and More [Pt 8] | C# for Beginners
 
 ---
 double a = 42.1;        // double (natural type) represents a double-precision floating-point number 64-bit
