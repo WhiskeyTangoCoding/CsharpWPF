@@ -1,0 +1,67 @@
+
+
+
+
+
+Numbers, Precision, Casting, Doubles, and More [Pt 8] | C# for Beginners
+
+---
+double a = 42.1;        // double (natural type) represents a double-precision floating-point number 64-bit
+//float b = 38.2;          float represents a single-precision floating-point number 32-bit
+float b = 38.2f;        // use an 'F' suffix to create a literal of this type (being explicit)
+double c = checked(a + b);
+
+Console.WriteLine(c);   
+
+/*Hello, World!
+80.30000076293945*/
+
+---
+decimal a = 42.1M;        More accuracy requires more storage space. (explicit type)
+decimal b = 38.2M;        // use an 'M' suffix to create a literal of this type (being explicit)
+decimal c = checked(a + b);
+
+Console.WriteLine(c);   
+
+/*Hello, World!
+80.3*/
+
+// The decimal type has a smaller range but greater precision than a double (significant digits)
+
+---
+//Console.WriteLine("The answer is " + c);     old school
+Console.WriteLine($"The answer is {c}");   // new school
+
+/*Hello, World!
+The answer is 80.3*/
+
+// $ is for the variable, so that it returns the value stored and not a text string such as The answer is {c}
+
+---
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+
+Console.WriteLine($"The range of integers is {min} to {max}");
+
+/*Hello, World!
+The range of integers is -79228162514264337593543950335 to 79228162514264337593543950335*/
+
+---
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+/*Hello, World!
+0.3333333333333333
+0.3333333333333333333333333333*/
+
+double third = 1.0 / 3.0;
+Console.WriteLine(third);
+
+/*Hello, World!
+0.3333333333333333*/
+
+---
