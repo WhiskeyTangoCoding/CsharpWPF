@@ -1,0 +1,114 @@
+
+
+Branching, Ifs, and Conditional Logic [Pt 9] | C# for Beginners
+
+---
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+int a = 5;
+int b = 6;
+int c = a + b;
+
+if (c > 10)
+{
+    Console.WriteLine("The answer is greater than 10.");
+}
+
+---
+int a = 5;
+int b = 6;
+int c = a + b;
+
+bool myTest = c > 10;
+
+if (myTest)
+{
+    Console.WriteLine("The answer is greater than 10.");
+}
+
+---
+int a = 5;
+int b = 3;
+int c = a + b;
+
+bool myTest = c > 10;
+
+if (myTest)
+{
+    Console.WriteLine("The answer is greater than 10.");
+}
+else
+{
+    Console.WriteLine("The answer is less than 10.");
+}
+
+---
+int a = 5;
+int b = 3;
+int c = 4;
+
+if ((a + b + c > 10) || (a == b))
+{
+    Console.WriteLine("The answer is greater than 10.");
+    Console.WriteLine("Or the first number is equal to the second.");
+}
+else
+{
+    Console.WriteLine("The answer is less than 10.");
+    Console.WriteLine("And the first number is not equal to the second.");
+}
+
+---
+ExploreIf();		// Function calling
+
+void ExploreIf()	// Function definition below
+{
+
+    int a = 5;
+    int b = 3;
+
+    if (a + b > 10)
+    {
+        Console.WriteLine("The answer is greater than 10");
+    }
+    else
+    {
+        Console.WriteLine("The answer is NOT greater than 10");
+    }
+
+    int c = 4;
+    if ((a + b + c > 10) && (a > b))
+    {
+        Console.WriteLine("The answer is greater than 10.");
+        Console.WriteLine("And the first number is greater than the second.");
+    }
+    else
+    {
+        Console.WriteLine("The answer is NOT greater than 10.");
+        Console.WriteLine("Or the first number is NOT greater than the second..");
+    }
+
+    if ((a + b + c > 10) || (a > b))
+    {
+        Console.WriteLine("The answer is greater than 10.");
+        Console.WriteLine("Or the first number is greater than the second.");
+    }
+    else
+    {
+        Console.WriteLine("The answer is NOT greater than 10.");
+        Console.WriteLine("And the first number is NOT greater than the second.");
+    }
+}
+
+/* Returns
+Hello, World!
+The answer is NOT greater than 10
+
+The answer is greater than 10.
+And the first number is greater than the second.
+
+The answer is greater than 10.
+Or the first number is greater than the second.*/
+
+---
