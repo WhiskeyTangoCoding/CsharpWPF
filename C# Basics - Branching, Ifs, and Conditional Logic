@@ -1,6 +1,10 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
 
-Branching, Ifs, and Conditional Logic [Pt 9] | C# for Beginners
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Branching, Ifs, and Conditional Logic [Pt 9] | C# for Beginners
 
 ---
 var sayHello = "Hello, World!";
