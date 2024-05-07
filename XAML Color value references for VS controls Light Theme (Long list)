@@ -434,3 +434,13 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="NavButtonFrameColor">#FF3843C4</SolidColorBrush>
 
     <!-- ** NOTE Above - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
+
+//---
+
+
+
+
+
+
+
+//---
