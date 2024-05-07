@@ -1,0 +1,78 @@
+
+
+    <!-- Standard Button setup -->
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource BtnControlsBackgroundStatic}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BtnControlsBorderStatic}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Margin" Value="10 5 10 5"/>
+        <Setter Property="FontFamily" Value="Microsoft Sans Serif"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="MinHeight" Value="23"/>
+        <Setter Property="MinWidth" Value="75"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border 
+                            x:Name="Border"  
+                            CornerRadius="2" 
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False"
+                                Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
+                                HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="BorderBrush" TargetName="Border" Value="{StaticResource BtnControlsDefaultBorder}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsDefaulted" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource BtnControlsDefaultBorder}"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        </Trigger>
+                    
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Foreground" Value="{StaticResource BtnControlsForegroundHover}"/>
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource BtnControlsBackgroundMouseOver}"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource BtnControlsBorderMouseOver}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Cursor" Value="AppStarting"/>
+                            <Setter Property="Foreground" Value="{StaticResource BtnControlsForegroundPressed}"/>
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource PressedBorderLightColor}"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource PressedBorderDarkColor}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Cursor" Value="Cross"/>
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource DisabledBorderLightColor}"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderDarkColor}"/>
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource BtnCustomForegroundDisabled}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+//---
+
+
+
+
+
+
+
+//---
