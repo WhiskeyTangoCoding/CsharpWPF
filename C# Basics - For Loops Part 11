@@ -1,4 +1,12 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- For Loops [Pt 11] | C# for Beginners
+
+---
 
 
 var sayHello = "Hello, World!";
