@@ -1,0 +1,67 @@
+
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+/*CODING TIPs: Here's a little trick!
+Place cursor at line or lines that you want to HIGHLIGHT, then...
+
+Hold down | SHIFT | and press the up & Down arrows (Quick highlight)
+To move highlighted Left <==> Right
+
+You can go | TAB |
+Or, Shift + | TAB |
+
+*/
+
+int counter = 0;
+
+while (counter < 5)
+{
+    counter++;				// counter++ is BEFORE the Console.WriteLine();
+    Console.WriteLine(counter);
+}
+
+/*Hello, World!				// ** Note the difference in return
+1
+2
+3
+4
+5*/
+
+---
+int counter = 0;
+
+while (counter < 5)
+{
+    Console.WriteLine(counter);
+    counter++;				// counter++ is AFTER the Console.WriteLine();
+}
+
+/*Hello, World!
+0
+1
+2
+3
+4*/
+
+---
+int counter = 0;
+
+while (true)        // infinite loop becasue it is ALWAYS true
+{
+    Console.WriteLine(counter);
+    ++counter;
+}
+
+// ** To break out in the CONSOLE, press Ctrl + C (universal break;)
+
+---
+int counter = 0;
+
+do
+{
+    Console.WriteLine(counter);
+    ++counter;
+}
+while (counter < 5);
