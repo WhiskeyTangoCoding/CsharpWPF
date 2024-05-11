@@ -1,5 +1,17 @@
 
 
+//---  C# WPF Programming #03 - CustomButtonStyles | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+** Resource Dictionary (WPF)
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML programming		(XAML code)		** XAML - Basics		CustomButtonStyles.xaml
+
+//--- Standard styles/Properties		(XAML code)				** Folder: ControlStandards or ControlTemplates
+
 
 In MainWindow.xaml
 
