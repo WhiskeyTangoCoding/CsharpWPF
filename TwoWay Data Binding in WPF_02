@@ -1,0 +1,47 @@
+
+
+
+//--- 
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** 
+
+//--- Element Binding		(XAML code)		** Two-Way Data Binding		MainWindow.xaml
+
+** Two-Way Data Binding
+
+** In two-way binding, the user can modify the data through the user interface and have that data updated in the source.
+   If the source changes while the user is looking at the view, you would want to update the view.
+
+** Let’s have a look at the following example in which one combobox with three combobox items and one textbox are created with some properties.
+   In this example, we don’t have any standard data source, but the UI elements are bound to other UI elements.
+
+
+<Window x:Class="FirstWPFApp.MainWindow"
+... just some http and some other pre-built code ...
+
+	  xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d" Title="MainWindow" Height="350" Width="604">
+    
+    <Grid Background="LightBlue">
+
+        <StackPanel>
+            <ComboBox Name="Combo_Box1" Margin="50" Width="100">
+                <ComboBoxItem Content="Green"/>
+                <ComboBoxItem Content="Yellow" IsSelected="True"/>
+                <ComboBoxItem Content="Orange"/>
+            </ComboBox>
+
+            <TextBox Name="Text_Box1" Margin="50" Width="100" Height="23"
+                     VerticalAlignment="Top"
+                     Text="{Binding ElementName=Combo_Box1, Path=SelectedItem.Content,
+                     Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Background="{Binding ElementName=Combo_Box1, Path=SelectedItem.Content}">
+            </TextBox>
+        </StackPanel>
+        
+    </Grid>
+    
+    
+</Window>
