@@ -1,4 +1,12 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- List T and Collections of Data [Pt 12] | C# for Beginners
+
+---
 
 
 var sayHello = "Hello, World!";
