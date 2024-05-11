@@ -12,6 +12,7 @@
 
 ** Two-Way Data Binding
 
+
 ** In two-way binding, the user can modify the data through the user interface and have that data updated in the source.
    If the source changes while the user is looking at the view, you would want to update the view.
 
