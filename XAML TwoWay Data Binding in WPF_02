@@ -8,8 +8,6 @@
 
 /*====================================================    | GENERAL NOTES |    ======================================================*/
 
-** 
-
 //--- Element Binding		(XAML code)		** Two-Way Data Binding		MainWindow.xaml
 
 ** Two-Way Data Binding
