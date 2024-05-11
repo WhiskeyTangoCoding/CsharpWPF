@@ -320,21 +320,9 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 
     <SolidColorBrush x:Key="BordersSeparatorsMouseDown">#FF007ACC</SolidColorBrush>
 
-    <!-- Computer Hope All CSS HTML color codes. Light Theme -->
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH1">#3F88D1</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH2">#4992DB</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH3">#539CE5</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH4">#5DA6EF</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH5">#67B0F9</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH6">#71BAFF</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH7">#7BC4FF</SolidColorBrush>
-    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH8">#85CEFF</SolidColorBrush>
-
-
     <!-- TEXT Light Theme -->
     <SolidColorBrush x:Key="MostTextColorSwatches">#FF1E1E1E</SolidColorBrush>
     <SolidColorBrush x:Key="DisabledTextColorSwatches">#FFA2A4A5</SolidColorBrush>
-
 
     <!-- SCROLL BAR Light Theme -->
     <SolidColorBrush x:Key="PressedScrollbarThumbColor">#FF6A6A6A</SolidColorBrush>
@@ -369,6 +357,24 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="ControlMediumColor">#FF7381F9</SolidColorBrush>
     <SolidColorBrush x:Key="ControlDarkColor">#FF211AA9</SolidColorBrush>
 
+    <!-- Computer Hope All CSS HTML color codes. Light Theme -->
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH1">#002E77</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH2">#003881</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH3">#00428B</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH4">#034C95</SolidColorBrush>
+
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH5">#0D569F</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH6">#1760A9</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH7">#216AB3</SolidColorBrush>
+    <SolidColorBrush x:Key="HTMLColorCodesWindowsBlueCH8">#2B74BD</SolidColorBrush>
+
+    <!-- Windows and HTML Light Theme -->
+    <SolidColorBrush x:Key="WindowsBlueHTMLColor">#357EC7</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowsComplementaryColor">#C77E36</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowsTextBlueInformationColor">#3778BF</SolidColorBrush>
+    <SolidColorBrush x:Key="MicrosoftEdgeBlueColor">#0078D7</SolidColorBrush>
+
+
     <!-- MOUSE Light Theme -->
     <SolidColorBrush x:Key="ControlMouseOverColor">#FF3843C4</SolidColorBrush>
     <SolidColorBrush x:Key="ControlPressedColor">#FF211AA9</SolidColorBrush>
@@ -383,10 +389,9 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 
     <SolidColorBrush x:Key="PressedBorderLightColor">#FF888888</SolidColorBrush>
     <SolidColorBrush x:Key="PressedBorderDarkColor">#FF444444</SolidColorBrush>
-
     <SolidColorBrush x:Key="DisabledBorderLightColor">#FFAAAAAA</SolidColorBrush>
-    <SolidColorBrush x:Key="DisabledBorderDarkColor">#FF888888</SolidColorBrush>
 
+    <SolidColorBrush x:Key="DisabledBorderDarkColor">#FF888888</SolidColorBrush>
     <SolidColorBrush x:Key="DefaultBorderBrushDarkColor">Black</SolidColorBrush>
 
     <!-- SPECIFIC Light Theme -->
@@ -394,13 +399,11 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="HeaderTopColor">#FFC5CBF9</SolidColorBrush>
     <SolidColorBrush x:Key="DatagridCurrentCellBorderColor">Black</SolidColorBrush>
     <SolidColorBrush x:Key="SliderTrackDarkColor">#FFC5CBF9</SolidColorBrush>
-
     <SolidColorBrush x:Key="NavButtonFrameColor">#FF3843C4</SolidColorBrush>
-    <SolidColorBrush x:Key="WindowsTitleBarColor">#357EC7</SolidColorBrush>
-    <SolidColorBrush x:Key="WindowsComplementaryColor">#C77E36</SolidColorBrush>
 
     <SolidColorBrush x:Key="SupremeCasinoPokerTableCloth">#35654D</SolidColorBrush>
     <SolidColorBrush x:Key="SupremeCasinoGreenGuild8116N">#4E6A54</SolidColorBrush>
+
     <SolidColorBrush x:Key="BilliardTableColorDEA178">#155843</SolidColorBrush>
     <SolidColorBrush x:Key="OlympicBilliardGreenC636">#36594A</SolidColorBrush>
     <SolidColorBrush x:Key="CrowdFlowerPoolFeltGreen">#277714</SolidColorBrush>
