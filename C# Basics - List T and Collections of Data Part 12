@@ -1,0 +1,85 @@
+
+
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+// List<T>
+
+// var (Local variable type inference) 		Similar to auto in C++
+var names = new List<string> { "<name>", "Danny", "Scott" };
+
+// new'ing up... Creating an Object. Making a List
+// local variable List<string>? names  		? means could be NULL
+
+// var less repetive code
+List<string> names = new List<string> { "<name>", "Danny", "Scott" };
+
+// Using a foreach loop
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");  // Creating a copy
+}
+
+/*Hello, World!
+Hello <NAME>!
+Hello DANNY!
+Hello SCOTT!*/
+
+---
+
+List<string> names = new List<string> { "Frank", "Danny", "Scott" };
+
+// Using a for loop
+for (int i = 0; i < names.Count; i++)
+{
+    Console.WriteLine($"Hello {names[i].ToUpper()}!");  // Creating a copy
+}
+
+/*Hello, World!
+Hello FRANK!
+Hello DANNY!
+Hello SCOTT!*/
+
+---
+List<string> names = new List<string> { "<name>", "Danny", "Scott" };
+
+names.Add("David");
+names.Add("Efrem");
+// List grows as you add more strings. Size and Capacity
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+/*Hello, World!
+Hello <NAME>!
+Hello DANNY!
+Hello SCOTT!
+Hello DAVID!
+Hello EFREM!*/
+
+---
+var names = new List<string>
+{
+    "Scott",
+    "Ana",
+    "Felipe",
+    "David",
+    "Frank",
+    "Efrem"
+};
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+/*Hello, World!
+Hello SCOTT!
+Hello ANA!
+Hello FELIPE!
+Hello DAVID!
+Hello FRANK!
+Hello EFREM!*/
