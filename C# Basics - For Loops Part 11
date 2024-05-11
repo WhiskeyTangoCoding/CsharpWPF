@@ -1,0 +1,152 @@
+
+
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+// 
+---
+for (int index = 0; index < 5; index++)
+{
+    Console.WriteLine($"Hello World! The index is {index}");
+}
+
+/*Hello, World!
+Hello World! The index is 0
+Hello World! The index is 1
+Hello World! The index is 2
+Hello World! The index is 3
+Hello World! The index is 4*/
+---
+int length = 5;
+
+for (int i = 0; i < length; i++)
+{
+    Console.WriteLine(i);
+}
+
+/*Hello, World!
+0
+1
+2
+3
+4*/
+
+---
+int length = 5;
+
+for (int i = 0; i < length; i++)
+{
+    if (i == 3)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+/*Hello, World!
+3*/
+
+---
+for (int row = 1; row < 7; row++)
+{
+    Console.WriteLine($"The index is {row}");
+}
+
+/*Hello, World!
+The index is 1
+The index is 2
+The index is 3
+The index is 4
+The index is 5
+The index is 6*/
+
+---
+for (char column = 'a'; column < 'k'; column++)
+{
+    Console.WriteLine($"The column is {column}");
+}
+
+/*Hello, World!
+The column is a
+The column is b
+The column is c
+The column is d
+The column is e
+The column is f
+The column is g
+The column is h
+The column is i
+The column is j*/
+
+---
+// Good for chess boards, checker, and tables
+
+for (int row = 1; row < 7; row++)
+{
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"The cell is ({row}, {column})");
+    }
+}
+
+/*Hello, World!
+The cell is (1, a)
+The cell is (1, b)
+The cell is (1, c)
+The cell is (1, d)
+The cell is (1, e)
+The cell is (1, f)
+The cell is (1, g)
+The cell is (1, h)
+The cell is (1, i)
+The cell is (1, j)
+The cell is (2, a)
+The cell is (2, b)
+The cell is (2, c)
+The cell is (2, d)
+The cell is (2, e)
+The cell is (2, f)
+The cell is (2, g)
+The cell is (2, h)
+The cell is (2, i)
+The cell is (2, j)
+The cell is (3, a)
+The cell is (3, b)
+The cell is (3, c)
+The cell is (3, d)
+The cell is (3, e)
+The cell is (3, f)
+The cell is (3, g)
+The cell is (3, h)
+The cell is (3, i)
+The cell is (3, j)
+The cell is (4, a)
+The cell is (4, b)
+The cell is (4, c)
+The cell is (4, d)
+The cell is (4, e)
+The cell is (4, f)
+The cell is (4, g)
+The cell is (4, h)
+The cell is (4, i)
+The cell is (4, j)
+The cell is (5, a)
+The cell is (5, b)
+The cell is (5, c)
+The cell is (5, d)
+The cell is (5, e)
+The cell is (5, f)
+The cell is (5, g)
+The cell is (5, h)
+The cell is (5, i)
+The cell is (5, j)
+The cell is (6, a)
+The cell is (6, b)
+The cell is (6, c)
+The cell is (6, d)
+The cell is (6, e)
+The cell is (6, f)
+The cell is (6, g)
+The cell is (6, h)
+The cell is (6, i)
+The cell is (6, j)*/
