@@ -78,7 +78,6 @@
 
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="Cursor" Value="Wait"/>
-                            <Setter Property="Foreground" Value="{StaticResource BtnControlsForegroundPressed}"/>
                             <Setter TargetName="Border" Property="Background" Value="{StaticResource BtnControlsBackgroundPressed}"/>
                             <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource BtnControlsBorderPressed}"/>
 			    <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource BtnCustomForegroundDisabled}"/>
