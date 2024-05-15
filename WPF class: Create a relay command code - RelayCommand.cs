@@ -8,9 +8,20 @@
 
 /*====================================================    | GENERAL NOTES |    ======================================================*/
 
-** C. Create a relay command. 		(See Setup Notes below...)			** Folder: Core		Class
-** WPF .NET 4.8.1
+** Now, Create a relay command. 	** WPF .NET 4.8.1			** Folder: Core		Class
 
+B. 1) Create a class in the MVVM folder	R.click 				Add > Class... called RelayCommand.cs
+	(See below code RelayCommand.cs)
+
+    internal class RelayCommand : ICommand		// ** Add  : ICommand    (inheritance)
+        
+// ** Hover over ICommand w/ mouse > Show Potential Fixes > Implement Interface
+
+** #boom Instant code created below... Let's GO !!
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+        
 using System;
 using System.Windows.Input;
 
