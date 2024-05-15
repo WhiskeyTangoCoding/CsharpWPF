@@ -21,7 +21,7 @@ namespace ApplicationName.Core
         private Action<object> _execute;
         private Func<object, bool> _canExecute;
 
-        public event EventHandler CanExecuteChanged
+        public event EventHandler CanExecuteChanged                        // public event EventHandler? CanExecuteChanged 	(.NET 8.0 only)
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
