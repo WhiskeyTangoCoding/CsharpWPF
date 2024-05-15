@@ -1,6 +1,6 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-//---  C# WPF Programming #01 - ButtonStyles | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+//---  C# WPF Programming #01d - ButtonStyles | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
 
 ** Resource Dictionary (WPF)
 
@@ -10,7 +10,7 @@
 
 //--- XAML programming		(XAML code)		** XAML - Basics		ButtonStyles.xaml
 
-//--- Standard styles/Properties		(XAML code)				    ** Folder: ControlStandards or ControlTemplates or StaticControls
+//--- Standard styles/Properties		(XAML code)				** Folder: ControlStandards or ControlTemplates or StaticControls
 
 ** Standard Windows button-			x:Key="DynamicFieldButton"
 
