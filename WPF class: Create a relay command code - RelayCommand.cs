@@ -14,7 +14,7 @@
 using System;
 using System.Windows.Input;
 
-namespace PayloadApp.Core
+namespace ApplicationName.Core
 {
     internal class RelayCommand : ICommand
     {
