@@ -1,5 +1,19 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+//---  C# WPF Programming #01s - ButtonStyles | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+** Resource Dictionary (WPF)
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML programming		(XAML code)		** XAML - Basics
+
+//--- Standard styles/Properties		(XAML code)				    ** Folder: ControlStandards or ControlTemplates or StaticControls
+
+** Standard Windows button-			x:Key="StandardFieldButton"		ButtonStyles.xaml
+
     <!-- Standard Button setup -->
     <Style TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
@@ -69,10 +83,17 @@
 
 //---
 
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** IMPORTANT!!
 
 
 
 
 
 
-//---
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
