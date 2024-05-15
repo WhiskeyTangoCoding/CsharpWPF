@@ -1,0 +1,65 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- LINQ Method Syntax vs Query [Pt 17] | C# for Beginners
+
+---
+
+For more information" Search Microsoft Language Integrated Query (LINQ)
+
+//
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+//
+
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    orderby score descending
+    select score;
+
+List<int> myScores = scoreQuery.ToList();       // no op (no operation)
+
+foreach (int score in myScores)
+{
+    Console.WriteLine(score);
+}
+
+---
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+//IEnumerable<int> scoreQuery =
+//    from score in scores
+//    where score > 80
+//    orderby score descending
+//    select score;
+
+Language Integrated Query (LINQ) also. Just is another way to code above IEnumerable<int> scoreQuery
+var scoreQuery = scores.Where(s => s > 80).OrderByDescending(s => s);     // Lambda same condition as where score > 80 with 'chaining'
+
+List<int> myScores = scoreQuery.ToList();
+
+foreach (int score in myScores)
+{
+    Console.WriteLine(score);
+}
+
+/*Hello, World!
+100
+97
+92
+82
+81*/
+
+---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
