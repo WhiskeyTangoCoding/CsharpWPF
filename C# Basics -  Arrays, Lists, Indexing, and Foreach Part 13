@@ -1,7 +1,10 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
 
+/*====================================================    | GENERAL NOTES |    ======================================================*/
 
-Arrays, Lists, Indexing, and Foreach [Pt 13] | C# for Beginners
+//--- Arrays, Lists, Indexing, and Foreach [Pt 13] | C# for Beginners
 
 var sayHello = "Hello, World!";
 Console.WriteLine(sayHello);
