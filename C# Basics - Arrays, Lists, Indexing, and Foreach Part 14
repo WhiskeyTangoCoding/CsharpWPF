@@ -1,0 +1,80 @@
+
+
+Sorting and Searching Lists [Pt 14] | C# for Beginners
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+// 
+
+var names = new List<string>
+{
+    "Scott",    //[0]
+    "Ana",      //[1]
+    "Felipe",   //[2]
+    "David",    //[3]
+    "Frank",    //[4]
+    "Efrem"     //[5]
+};
+
+names.Sort();
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+/*Hello, World!
+Hello ANA!
+Hello DAVID!
+Hello EFREM!
+Hello FELIPE!
+Hello FRANK!
+Hello SCOTT!*/
+
+---
+/*CODING TIPs: Here's a little trick!*/
+// Changing our List<T> to int
+// If you hover over names, R.click... You can 'rename' to mumbers
+// If you hover over name, R.click... You can 'rename' to mumber
+
+var numbers = new List<int> { 45, 56, 99, 48, 67, 78 };
+
+numbers.Sort();
+// Other methods to use: Capacity() Add() Clear() Remove() Contains()
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"{number}");
+}
+/*Hello, World!
+45
+48
+56
+67
+78
+99*/
+
+---
+
+var numbers = new List<int> { 45, 56, 99, 48, 67, 78 };
+
+numbers.Sort();
+// Make use of $string interpolation below
+Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"{number}");
+}
+
+/*Hello, World!
+I found 99 at index 5		// returns (I found 99 at index 5) because it is after the Sort() method
+45
+48
+56
+67
+78
+99*/
+
+---
