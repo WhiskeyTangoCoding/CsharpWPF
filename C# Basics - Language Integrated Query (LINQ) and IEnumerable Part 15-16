@@ -1,0 +1,186 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Language Integrated Query (LINQ) and IEnumerable [Pt 15] | C# for Beginners
+
+---
+
+For more information" Search Microsoft Language Integrated Query (LINQ)
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+// 
+
+// Specify the data source
+//int[] scores = { 97, 92, 81, 60 };	older line code for int Array
+int[] scores = [97, 92, 81, 60];	// ** Notice newer line code for int Array
+
+// Define the query expression
+IEnumerable<int> scoreQuery =
+    from score in scores		// QUERY syntax
+    where score > 80			// where clause called filter
+    select score;			// select or projection
+
+// Execute the query
+foreach (int i in scoreQuery)
+{
+    Console.WriteLine(i + " ");
+}
+
+/*Hello, World!
+97
+92
+81*/
+
+---
+// Now, change to List<T>
+List<int> scores = [97, 92, 81, 60];
+// "Syntactic sugar" the new, cleaner way of line coding in C#
+
+// Imperative programming. Declaring every single step
+for (int i = 0; i < scores.Count; i++)
+{
+    if (scores[i] > 80)
+    {
+        Console.WriteLine($"Found scores greater than 80: {scores[i]}");
+    }
+}
+
+// This works fine but it not very integrated. Steps are imparitive and explicit. Looping through & more comparing
+// Instead, use Language Integrated Query (LINQ) below. 
+
+/*Hello, World!
+Found scores greater than 80: 97
+Found scores greater than 80: 92
+Found scores greater than 80: 81*/
+
+---
+
+List<int> scores = [97, 92, 81, 60];
+
+// Declarative programming. Describing what I want return. Question
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+foreach (int i in scoreQuery)	// Answer
+{
+    Console.WriteLine(i + " ");
+}
+
+/*Hello, World!
+97
+92
+81*/
+
+// ** IEnumerable works with any kind of data source ie. List, Array. Concept: Deferred execution
+
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- LINQ Query Expressions From, Where, Orderby, and Select [Pt 16] | C# for Beginners
+
+---
+
+//
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+// Declarative programming. Describing what I want return. Question
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+foreach (int i in scoreQuery)	// Answer
+{
+    Console.WriteLine(i + " ");
+}
+
+/* Returns the order it was Declared in
+Hello, World!
+82
+97
+92
+100
+81*/
+
+---
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+int scoreCount = scoreQuery.Count();
+Console.WriteLine($"The score count is: {scoreCount}");
+
+foreach (int i in scoreQuery)
+{
+    Console.WriteLine(i + " ");
+}
+
+/*Hello, World!
+The score count is: 5
+82
+97
+92
+100
+81*/
+
+---
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+IEnumerable<int> scoreQuery =		// IEnumerable<int>
+    from score in scores
+    where score > 80
+    orderby score descending		//Use another filter instead of score.Sort(); 
+    select score;
+
+foreach (int i in scoreQuery)		// int i
+{
+    Console.WriteLine(i + " ");
+}
+
+/*Hello, World!
+100
+97
+92
+82
+81*/
+
+---
+// Let's modify the query more... to make better
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
+
+IEnumerable<string> scoreQuery =		// IEnumerable<string>
+    from score in scores
+    where score > 80
+    orderby score descending
+    select $"The score is {score}";     // Use 'string interpolation' directly in the query
+
+foreach (string s in scoreQuery)	// string s
+{
+    Console.WriteLine(s);
+}
+
+/*Hello, World!
+The score is 100
+The score is 97
+The score is 92
+The score is 82
+The score is 81*/
+
+---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
