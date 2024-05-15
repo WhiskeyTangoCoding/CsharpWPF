@@ -67,7 +67,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="CategoryGroupGlyphForegroundHover" Color="#FF007ACC"/>
 
 
-    <!-- PROPERTIES TOGGLE -->
+    <!-- PROPERTIES TOGGLE BUTTON -->
     <!-- Properties window Toggle Buttons Dark Theme -->
     <SolidColorBrush x:Key="ToggleButtonForeground" Color="#FFF1F1F1"/>
     <SolidColorBrush x:Key="ToggleButtonBackground" Color="#FF252526"/>
@@ -107,6 +107,8 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="ListItemsBorderHover" Color="#72555555"/>
     <SolidColorBrush x:Key="ListItemsBorderSelected" Color="#FF3399FF"/>
 
+
+    <!-- STANDARD COMMAND BUTTON -->
     <!-- Properties window Command Buttons Dark Theme -->
     <SolidColorBrush x:Key="CommandButtonForeground" Color="#FFF1F1F1"/>
     <SolidColorBrush x:Key="CommandButtonBackgroundHover" Color="#FF3E3E40"/>
@@ -147,11 +149,11 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="GridCLinesHeaderForeground" Color="#FF333337"/>
 
 
-    <!-- BUTTONS -->
+    <!-- BUTTON CONTROLS -->
     <!-- Button controls Default Dark Theme -->
-    <SolidColorBrush x:Key="BtnControlsDefaultForeground" Color="#F1F1F1"/>
-    <SolidColorBrush x:Key="BtnControlsDefaultBackground" Color="#3F3F46"/>
-    <SolidColorBrush x:Key="BtnControlsDefaultBorder" Color="#555555"/>
+    <SolidColorBrush x:Key="BtnControlsForegroundDefault" Color="#F1F1F1"/>
+    <SolidColorBrush x:Key="BtnControlsBackgroundDefault" Color="#3F3F46"/>
+    <SolidColorBrush x:Key="BtnControlsBorderDefault" Color="#555555"/>
 
     <!-- Button controls Disabled Dark Theme -->
     <SolidColorBrush x:Key="BtnControlsForegroundDisabled" Color="#656565"/>
@@ -210,13 +212,13 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <!-- Check box controls Pressed Dark Theme -->
     <SolidColorBrush x:Key="CheckboxControlsBackgroundPressed" Color="#007ACC"/>
     <SolidColorBrush x:Key="CheckboxControlsBorderPressed" Color="#007ACC"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextPressed" Color="#F1F1F1"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextPressed" Color="#F1F1F1"/>
     <SolidColorBrush x:Key="CheckboxControlsGlyphPressed" Color="#F1F1F1"/>
 
     <!-- Check box controls Focused Dark Theme -->
     <SolidColorBrush x:Key="CheckboxControlsBackgroundFocused" Color="#1F1F20"/>
     <SolidColorBrush x:Key="CheckboxControlsBorderFocused" Color="#007ACC"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextFocused" Color="#F1F1F1"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextFocused" Color="#F1F1F1"/>
     <SolidColorBrush x:Key="CheckboxControlsGlyphFocused" Color="#F1F1F1"/>
 
 
