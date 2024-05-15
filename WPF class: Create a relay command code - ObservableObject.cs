@@ -22,7 +22,7 @@
 using System.ComponentModel;			// ** Add this line to get rid of the squigglies under INotifyPropertyChanged
 using System.Runtime.CompilerServices;		// for 	protected void OnPropertyChanged()
 
-namespace PayloadApp.Core
+namespace ApplicationName.Core
 {
     internal class ObservableObject : INotifyPropertyChanged		//1. (This class 'inherits' from INotifyPropertyChanged)
     {
