@@ -6,8 +6,6 @@
 
 */
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
-
 ** Now, Create a relay command. 	** WPF .NET 4.8.1			** Folder: Core		Class
 
 B. 1) Create a class in the MVVM folder	R.click 				Add > Class... called RelayCommand.cs
