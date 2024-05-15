@@ -20,6 +20,8 @@ B. 1) Create a class in the MVVM folder	R.click 				Add > Class... called RelayC
 
 /*====================================================    | GENERAL NOTES |    ======================================================*/
         
+** Then, Edit, Update & Change the basic implementation to this code below...
+	    
 using System;
 using System.Windows.Input;
 
