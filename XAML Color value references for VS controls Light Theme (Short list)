@@ -61,7 +61,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="CategoryGroupGlyphForegroundHover" Color="#FF007ACC"/>
 
 
-    <!-- PROPERTIES TOGGLE -->
+    <!-- PROPERTIES TOGGLE BUTTON -->
     <!-- Properties window Toggle Buttons Light Theme -->
     <SolidColorBrush x:Key="ToggleButtonForeground" Color="#FF1E1E1E"/>
     <SolidColorBrush x:Key="ToggleButtonBackground" Color="#FFF5F5F5"/>
@@ -80,7 +80,6 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 
     <SolidColorBrush x:Key="ToggleButtonBorderSelected" Color="#FF007ACC"/>
     <SolidColorBrush x:Key="ToggleButtonBorderDisabled" Color="#FFF5F5F5"/>
-
 
     <!-- Properties window Input fields Light Theme -->
     <SolidColorBrush x:Key="InputFieldForeground" Color="#FF1E1E1E"/>
@@ -101,6 +100,8 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="ListItemsBorderHover" Color="#FFC9DEF5"/>
     <SolidColorBrush x:Key="ListItemsBorderSelected" Color="#FFCCCEDB"/>
 
+
+    <!-- STANDARD COMMAND BUTTON -->
     <!-- Properties window Command Buttons Light Theme -->
     <SolidColorBrush x:Key="CommandButtonForeground" Color="#FF1E1E1E"/>
     <SolidColorBrush x:Key="CommandButtonBackgroundHover" Color="#FFC9DEF5"/>
@@ -141,7 +142,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="GridCLinesHeaderForeground" Color="#FFE0E3E6"/>
 
 
-    <!-- BUTTONS -->
+    <!-- STANDARD BUTTON CONTROLS -->
     <!-- Button controls Default Light Theme -->
     <SolidColorBrush x:Key="BtnControlsDefaultForeground" Color="#1E1E1E"/>
     <SolidColorBrush x:Key="BtnControlsDefaultBackground" Color="#ECECF0"/>
@@ -182,7 +183,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="BtnCustomForegroundDisabled" Color="#FF838383"/>
 
 
-    <!-- CHECK BOX -->
+    <!-- STANDARD CHECK BOX -->
     <!-- Check box controls Default Light Theme -->
     <SolidColorBrush x:Key="CheckboxControlsBackgroundDefault" Color="#FEFEFE"/>
     <SolidColorBrush x:Key="CheckboxControlsBorderDefault" Color="#717171"/>
@@ -204,13 +205,13 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <!-- Check box controls Pressed Light Theme -->
     <SolidColorBrush x:Key="CheckboxControlsBackgroundPressed" Color="#007ACC"/>
     <SolidColorBrush x:Key="CheckboxControlsBorderPressed" Color="#007ACC"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextPressed" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextPressed" Color="#1E1E1E"/>
     <SolidColorBrush x:Key="CheckboxControlsGlyphPressed" Color="#FFFFFF"/>
 
     <!-- Check box controls Focused Light Theme -->
     <SolidColorBrush x:Key="CheckboxControlsBackgroundFocused" Color="#FDF4BF"/>
     <SolidColorBrush x:Key="CheckboxControlsBorderFocused" Color="#3399FF"/>
-    <SolidColorBrush x:Key="CheckboxControlsBTextFocused" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CheckboxControlsTextFocused" Color="#1E1E1E"/>
     <SolidColorBrush x:Key="CheckboxControlsGlyphFocused" Color="#1E1E1E"/>
 
 
