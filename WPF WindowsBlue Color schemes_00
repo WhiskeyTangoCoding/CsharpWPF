@@ -47,36 +47,36 @@ Adjacent colors
 //---
 Microsoft Edge blue / #0078d7 Hex Color Code
 
-Inverted			25% saturated			Grayscale			Rusty celadon(grey)	  Gray
-#ff8728				#007bf2				    #6c6c6c				#898a74			          #737373
+Inverted			25% saturated			Grayscale			Rusty celadon(grey)	       Gray
+#ff8728		       #007bf2		       #6c6c6c		       #898a74	              #737373
 
 25% lighter 			Original			25% darker (blue)
-#2692e7				    #0078d7				#115e9b
+#2692e7		       #0078d7			#115e9b
 
 Web safe: blue			25% desaturated			HTML: royalblue
-#0000ff / #00f			#1675c2				      #4169e1
+#0000ff / #00f			#1675c2				#4169e1
 
 
 //---
 Closely related			Intermediately Related		Distantly related
 
-Bright navy blue		Chrome aluminum			Canary				      Green
-#1974d2				      #a8a9ad				      #ffff99 / #ff9			#7fba00
+Bright navy blue		Chrome aluminum			Canary				Green
+#1974d2		       #a8a9ad				#ffff99 / #ff9		#7fba00
 
 True blue			  Red cola			    Lemon yellow (Crayola)
-#0073cf				  #b62020				    #ffff9f
+#0073cf			  #b62020			    #ffff9f
 
 Celtic blue			Venetian red			Electric yellow
-#246bce				  #c80815				    #ffff33 / #ff3
+#246bce		       #c80815		       #ffff33 / #ff3
 
 Flickr Blue			Orange Red			  Daffodil
-#216bd6				  #f25022				    #ffff31
+#216bd6		       #f25022		         #ffff31
 
 Han blue			  Pink				      Pastel yellow
-#446ccf				  #ffc0cb				    #fdfd96
+#446ccf		         #ffc0cb			      #fdfd96
 
 Blue								              Yellow
-#00a4ef								            #ffb900
+#00a4ef								       #ffb900
 
 
 //---
@@ -86,13 +86,13 @@ Blue								              Yellow
 ** Microsoft Windows 7 blue (ORIGINAL)
 
 Inverted			25% saturated			Grayscale
-#ff5d12				#00adff				#777777 / #777
+#ff5d12			#00adff			#777777 / #777
 
 25% lighter			(ORIGINAL)			25% darker
-#3fb4ea				  #00a2ed				  #137bab
+#3fb4ea			#00a2ed		       #137bab
 
 Web safe: teal			25% desaturated			HTML: cornflowerblue
-#008080				      #1899d5				      #6495ed
+#008080				#1899d5				#6495ed
 
 //---
 
@@ -102,13 +102,13 @@ Web safe: teal			25% desaturated			HTML: cornflowerblue
        Complimaentary Color: #c77e36
 
 Inverted			25% saturated			Grayscale
-#ca8138				#237ed9				    #7e7e7e
+#ca8138		       #237ed9		       #7e7e7e
 
 25% lighter			(ORIGINAL)			25% darker
-#709dcb				  #357ec7				  #366594
+#709dcb			#357ec7			#366594
 
-Web safe: blue			25% desaturated			HTML: steelblue
-##0000fff / #00f		#447eb8				      #4682b4
+Web safe: blue		25% desaturated			HTML: steelblue
+##0000fff / #00f		#447eb8				#4682b4
 
 
 ** 
