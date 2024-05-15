@@ -1,0 +1,130 @@
+
+
+
+Arrays, Lists, Indexing, and Foreach [Pt 13] | C# for Beginners
+
+var sayHello = "Hello, World!";
+Console.WriteLine(sayHello);
+
+var names = new List<string>
+{
+    "Scott",    //[0]
+    "Ana",      //[1]
+    "Felipe",   //[2]
+    "David",    //[3]
+    "Frank",    //[4]
+    "Efrem"     //[5]
+};
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+Console.WriteLine('\n');
+Console.WriteLine(names[0]);
+Console.WriteLine(names[2]);
+
+/*Hello, World!
+Hello SCOTT!
+Hello ANA!
+Hello FELIPE!
+Hello DAVID!
+Hello FRANK!
+Hello EFREM!
+
+
+Scott
+Felipe*/
+
+---
+
+/*CODING TIPs: Here's a little trick!*/
+// ** To 'comment out' an area of your code quickly. Highlight first then Ctrl + K + C
+// ** To remove 'commentted out' an area of your code quickly. Highlight first then Ctrl + K + U
+
+//foreach (var name in names)
+//{
+//    Console.WriteLine($"Hello {name.ToUpper()}!");
+//}
+
+---
+Console.WriteLine('\n');		// adding a | SPACE |
+Console.WriteLine(names[0]);
+Console.WriteLine(names[2]);
+
+// Getting last Element in our List<>
+Console.WriteLine(names[names.Count - 1]);	// Same as Console.WriteLine(names[5]);
+
+/*Hello, World!
+
+
+Scott
+Felipe
+Efrem*/
+
+---
+
+Console.WriteLine('\n');
+Console.WriteLine(names[0]);
+//Console.WriteLine(names[names.Count - 1]);
+// DevKit C#12.0
+Console.WriteLine(names[^1]);   // Index operator ^ Means count from the back of the List<> array (n - 1)
+
+/*Hello, World!
+
+
+Scott
+Efrem*/
+
+---
+
+foreach (var name in names[2..4])       // Ranges [2] to [4] not inclusive
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+/*Hello, World!
+Hello FELIPE!
+Hello DAVID!*/
+
+---
+// ** Arrays are fixed in length
+var names = new string[] { "Scott", "Ana", "Felipe" };  // Declared an Array with 3 memory blocks
+
+// Can't use Add() with Array. Have to make a new Array and copy values from the original to new Array
+// More work. More memory. More resources used. Basically, have to manually add and create more space to add new strings
+
+// DevKit C#12.0
+names = [.. names, "David"];    // Basically, making a new Array copy and appending the new string to the end
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+// ** List<> is most preferrable, because it increases in Size() and Capacity() on its own
+
+
+/*Hello, World!
+Hello SCOTT!
+Hello ANA!
+Hello FELIPE!
+Hello DAVID!*/
+
+---
+// ** Arrays are fixed in length
+
+var people = new string[] { "Kevin", "Joseph", "Raul", "Marco" };
+people = [.. people, "Sophia", "Lucy"];
+people.ToList().ForEach(Console.WriteLine);
+
+/*Hello, World!
+Kevin
+Joseph
+Raul
+Marco
+Sophia
+Lucy*/
+
+---
