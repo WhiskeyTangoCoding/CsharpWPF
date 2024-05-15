@@ -58,7 +58,7 @@ Web safe: blue		25% desaturated		HTML: royalblue
 
 
 //---
-Closely related			Intermediately Related		Distantly related
+Closely related		Intermediately Related	Distantly related
 
 Bright navy blue		Chrome aluminum	       Canary				Green
 #1974d2		       #a8a9ad		       #ffff99 / #ff9		#7fba00
@@ -101,8 +101,8 @@ Web safe: teal	25% desaturated		HTML: cornflowerblue
 ** Microsoft HTML color code #357EC7 (ORIGINAL)
        Complimaentary Color: #c77e36
 
-Inverted		25% saturated			Grayscale
-#ca8138		#237ed9		       #7e7e7e
+Inverted             25% saturated			Grayscale
+#ca8138	       #237ed9		       #7e7e7e
 
 25% lighter		(ORIGINAL)			25% darker
 #709dcb	       #357ec7			#366594
