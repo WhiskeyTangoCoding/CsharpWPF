@@ -1,6 +1,12 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/
 
-Sorting and Searching Lists [Pt 14] | C# for Beginners
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Sorting and Searching Lists [Pt 14] | C# for Beginners | C# for Beginners
+
+---
 
 var sayHello = "Hello, World!";
 Console.WriteLine(sayHello);
@@ -78,3 +84,7 @@ I found 99 at index 5		// returns (I found 99 at index 5) because it is after th
 99*/
 
 ---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
