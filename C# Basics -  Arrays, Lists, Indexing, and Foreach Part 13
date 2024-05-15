@@ -6,6 +6,8 @@
 
 //--- Arrays, Lists, Indexing, and Foreach [Pt 13] | C# for Beginners
 
+---
+
 var sayHello = "Hello, World!";
 Console.WriteLine(sayHello);
 
