@@ -1,0 +1,102 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+//---  C# WPF Programming #15 - TextboxTheme | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+** Resource Dictionary (WPF)
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Standard styles/Properties		(XAML code)					SearchbarStyles.xaml
+
+** TextBox Styles and Templates		<!-- This code creates a Light Theme SEARCH BAR -->	** Folder: ControlStandards or StaticControls
+
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Search Bar Button setup -->
+    <Style TargetType="{x:Type TextBox}" x:Key="ModernSearchbox">
+        <Setter Property="Background" Value="{StaticResource EmbeddedTabBackgroundBody}"/>
+        <Setter Property="Foreground" Value="{StaticResource EmbeddedTabForegroundBody}"/>
+        <Setter Property="FontFamily" Value="Microsoft Sans Serif"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="31"/>
+        <Setter Property="Width" Value="304"/>
+        <Setter Property="Template">
+
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="0"
+                            Background="{TemplateBinding Background}"
+                            Height="{TemplateBinding Height}"
+                            Width="{TemplateBinding Width}">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="10 5 10 5"
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalContentAlignment="Center"
+                                     Padding="5"
+                                     Foreground="#CFCFCF"
+                                     x:Name="SearchBox"/>
+
+                            <TextBlock IsHitTestVisible="False"
+                                       Text="Search Control Panel               🔎"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="20 0 0 0"
+                                       FontFamily="{TemplateBinding FontFamily}"
+                                       FontSize="{TemplateBinding FontSize}"
+                                       FontWeight="{TemplateBinding FontWeight}"
+                                       Foreground="{TemplateBinding Foreground}">
+
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                <!-- If -->
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                                <Setter Property="Cursor" Value="IBeam"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                        <Setter Property="Background" Value="{StaticResource EmbeddedTabBackgroundInDisabled}"/>
+                                        <Setter Property="Foreground" Value="{StaticResource EmbeddedTabForegroundInDisabled}"/>
+                                        <!-- Else -->
+
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>
+
+//---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** IMPORTANT!!
+
+
+
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
