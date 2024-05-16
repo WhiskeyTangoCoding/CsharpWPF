@@ -1,3 +1,5 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
 //---  C# WPF Tutorial #00 - StreamTestingApp backup code | WPF & XAML | - Windows Presentation Foundation
 
 **     x:Class="StreamTestingApp.MainWindow"									By WhiskeyTango Coding
