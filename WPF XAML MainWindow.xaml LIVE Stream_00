@@ -1,6 +1,6 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-//---  C# WPF Tutorial #00 - StreamTestingApp backup code | WPF & XAML | - Windows Presentation Foundation
+//---  C# WPF Tutorial #00 - InfractionApp backup code | WPF & XAML | - Windows Presentation Foundation
 
 **     x:Class="StreamTestingApp.MainWindow"									By WhiskeyTango Coding
 
@@ -123,9 +123,9 @@
 
                 <!-- FILE EDIT VIEW Header Grid.Row="0" -->
                 <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
-                    <Button Margin="2" Content="File" Width="51"/>
-                    <Button Margin="2" Content="Edit" Width="51"/>
-                    <Button Margin="2" Content="View" Width="51"/>
+                    <Button Margin="2" Content="File" Width="38"/>
+                    <Button Margin="2" Content="Edit" Width="38"/>
+                    <Button Margin="2" Content="View" Width="38"/>
                 </StackPanel>
             </Grid>
             
