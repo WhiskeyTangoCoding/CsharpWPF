@@ -1,0 +1,80 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+**
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML programming		(XAML code)		** XAML - Basics		MainWindow.xaml.cs    (aka. CodeBehind)
+
+** 
+
+using InfractionApp.Forms.ViewForms;
+using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
+
+
+namespace InfractionApp
+{
+    public partial class MainWindow : Window
+    {
+        public string usersName = string.Empty;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            // For background image x:Name="GridRow3", Grid.Column="2"
+            ClientWindowMain.Source = new BitmapImage(new Uri(@"\Resources\Images\Ace_of_Hearts_190145.png",
+                UriKind.RelativeOrAbsolute));
+        }
+
+        private void Btn_Accounts_Click(object sender, RoutedEventArgs e)
+        {
+            Accounts accounts = new Accounts();
+            //this.Visibility = Visibility.Hidden;
+            this.Hide();
+            accounts.Show();
+        }
+
+        private void Btn_Send_Click(object sender, RoutedEventArgs e)
+        {
+            usersName = TxtBox_UserName.Text;
+            Lbl_UserName.Text = $"Welcome! {usersName}";
+        }
+
+        private void Btn_Clear_Click(object sender, RoutedEventArgs e)
+        {
+            BindingBox.Clear();
+            TxtBox_UserName.Clear();
+        }
+
+        private void Btn_ClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Imma' Click_ME Button", "Developed & Designed by WhiskeyTango Coding",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+    }
+}
+
+//---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** IMPORTANT!!
+
+
+
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
