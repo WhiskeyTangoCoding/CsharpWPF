@@ -1,0 +1,305 @@
+//---  C# WPF Tutorial #00 - StreamTestingApp backup code | WPF & XAML | - Windows Presentation Foundation
+
+**     x:Class="StreamTestingApp.MainWindow"									By WhiskeyTango Coding
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- XAML programming		(XAML code)		** XAML - Basics		MainWindow.xaml
+
+
+<Window x:Class="InfractionApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"     
+        xmlns:local="clr-namespace:InfractionApp"                 
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"           
+        xmlns:core="clr-namespace:InfractionApp.Core"       
+        mc:Ignorable="d"
+        
+        Title="InfractionApp" Height="720" Width="1280" Background="{DynamicResource ResourceKey=ClientAreaWindowColor}"
+        Topmost="False" WindowState="Normal">
+
+    <!-- Window.DataContext -->
+    <Window.DataContext>
+        <core:RollAdvDis/> <!-- <RollAdvDis -->
+    </Window.DataContext>
+
+    <!-- Window.Resources -->
+    <Window.Resources>
+        <sys:String x:Key="strTestString">Testing Window Resources</sys:String>
+
+        <!-- Standard Border setup -->
+        <Style TargetType="{x:Type Border}" x:Key="DynamicFieldBorder">
+
+            <Setter Property="CornerRadius" Value="2"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="{StaticResource BorderLightColor}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderMediumColor}"/>
+        </Style>
+
+        <!-- Standard Canvas setup -->
+        <Style TargetType="{x:Type Canvas}">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Height" Value="229"/>
+            <Setter Property="Width" Value="304"/>
+            <Setter Property="Background" Value="#e2e2e2"/>
+        </Style>
+
+        <!-- ComboBox Styles. -->
+        <Style TargetType="ComboBox" x:Key="ComboBoxStyle">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Background" Value="{StaticResource ControlLightColor}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource MostTextColorSwatches}"/>
+            <Setter Property="Margin" Value="3 3 23 3"/>
+            <Setter Property="FontFamily" Value="Microsoft Sans Serif"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="MinHeight" Value="23"/>
+            <Setter Property="MinWidth" Value="128"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="AllowDrop" Value="True"/>
+        </Style>
+
+        <!-- CheckBox Styles. -->
+        <Style TargetType="CheckBox" x:Key="CheckBoxStyle">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Background" Value="{StaticResource ControlLightColor}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource MostTextColorSwatches}"/>
+            <Setter Property="Height" Value="13"/>
+            <Setter Property="Width" Value="13"/>
+        </Style>
+
+        <!-- ScrollBar Styles. -->
+        <Style TargetType="ScrollBar" x:Key="ScrollBarStyle">
+            <Setter Property="Margin" Value="10 5 10 5"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Background" Value="{StaticResource PressedScrollbarThumbColor}"/>
+            <Setter Property="Minimum" Value="1"/>
+            <Setter Property="Maximum" Value="240"/>
+            <Setter Property="Height" Value="18"/>
+            <Setter Property="Width" Value="725"/>
+            <Setter Property="Value" Value="51"/>
+        </Style>
+
+    </Window.Resources>
+    <!-- END Window.Resources -->
+
+
+
+    <!-- Add a Border around our Window Form -->
+    <Border Background="Transparent" CornerRadius="20">
+
+        <!-- MAIN StackPanel for our Window Form -->
+        <StackPanel>
+
+            <!-- Header Grid.Row="0" -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle>
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStopCollection>
+                                <GradientStop Color="#3F88D1" Offset="0.0"/>
+                                <GradientStop Color="#539CE5" Offset=".25"/>
+                                <GradientStop Color="#67B0F9" Offset=".75"/>
+                                <GradientStop Color="#7BC4FF" Offset="1.0"/>
+                            </GradientStopCollection>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <!-- FILE EDIT VIEW Header Grid.Row="0" -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Margin="2" Content="File" Width="51"/>
+                    <Button Margin="2" Content="Edit" Width="51"/>
+                    <Button Margin="2" Content="View" Width="51"/>
+                </StackPanel>
+            </Grid>
+            
+
+            <!-- ICONS Grid.Row="1" -->
+            <StackPanel Grid.Row="1" HorizontalAlignment="Stretch">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="32"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Grid.ColumnSpan="3">
+                        <TextBlock Text="Hello Thank you for watching my pain!" Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            
+
+            <!-- Accent line Grid.Row="2" -->
+            <Grid x:Name="GridRow2" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle Fill="{StaticResource WindowsComplementaryColor}"/>
+            </Grid>
+
+
+            <!-- CLIENT AREA WINDOW Grid.Row="3" -->
+            <StackPanel Grid.Row="3">
+                <Grid x:Name="GridRow3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="536"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="19"/>
+                        <ColumnDefinition Width="97"/>
+                        <ColumnDefinition Width="32"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="1">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Vertical">
+                            <RadioButton Content="Home" Style="{StaticResource ResourceKey=MenuButtonTheme}"/>
+                            <RadioButton Content="System" Style="{StaticResource ResourceKey=MenuButtonTheme}"/>
+                            <RadioButton x:Name="Btn_Accounts" Content="Accounts" Style="{StaticResource ResourceKey=MenuButtonTheme}"
+                                         Click="Btn_Accounts_Click"/>
+
+                            <!-- ** DON'T forget to add... Window.DataContext -->
+                            <TextBox x:Name="BindingBox" Text="{Binding AddDis, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Margin="10 5 10 10" Content="{Binding AddDis}"/>
+
+                            <WrapPanel Margin="5 10 10 5" Background="{StaticResource BorderLightColor}"
+                                       Orientation="Horizontal" HorizontalAlignment="Left">
+
+                                <Label x:Name="Lbl_Temp" Content="Enter your name:"/>
+                                <TextBox x:Name="TxtBox_UserName" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="Lbl_UserName" Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+                            </WrapPanel>
+
+                            <TextBox Margin="5 20 10 5" x:Name="FocusBox"/>
+                            <TextBlock Text="Not doing much atm..." Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Column="2">
+                        <Rectangle Fill="{StaticResource WindowsComplementaryColor}" Grid.ColumnSpan="2"/>
+                    </Grid>
+
+                    <Grid Grid.Column="3">
+                        <Image x:Name="ClientWindowMain" Stretch="UniformToFill"
+                               Height="536" Width="539"/>
+                    </Grid>
+
+
+                    <Grid Grid.Column="4">
+                        <Rectangle Fill="{StaticResource WindowsComplementaryColor}" Grid.ColumnSpan="2"/>
+                    </Grid>
+                    
+
+                    <Grid Grid.Column="6">
+                        <StackPanel VerticalAlignment="Bottom">
+                            <Button x:Name="Btn_Send" Content="Send" Click="Btn_Send_Click"/>
+                            <Button x:Name="Btn_Clear" Content="Clear" Click="Btn_Clear_Click"/>
+                            <Button x:Name="Btn_ClickMe" Content="Click ME" Click="Btn_ClickMe_Click"/>
+                            <Button Margin="10 5 10 10" x:Name="Btn_Exit" Content="Exit" Click="Btn_Exit_Click"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <StackPanel Grid.Column="7" Orientation="Horizontal" VerticalAlignment="Bottom">
+                        <TextBlock Margin="0 0 0 4" Text="Welcome to WhiskeyTango Coding"
+                                   Style="{StaticResource ResourceKey=TextBlockTitle}">
+                            <TextBlock.RenderTransform>
+                                <RotateTransform Angle="270"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+
+
+            <!-- Accent line Grid.Row="4" -->
+            <Grid x:Name="GridRow4" Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle Fill="{StaticResource WindowsComplementaryColor}"/>
+            </Grid>
+
+
+            <!-- Footer Grid.Row="5" -->
+            <Grid x:Name="GridRow5" Grid.Row="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle>
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStopCollection>
+                                    <GradientStop Color="#3f88d1" Offset="0.0"/>
+                                    <GradientStop Color="#539ce5" Offset=".25"/>
+                                    <GradientStop Color="#67b0f9" Offset=".75"/>
+                                    <GradientStop Color="#7bc4ff" Offset="1.0"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+        </StackPanel>
+        <!-- MAIN StackPanel closing-->
+    </Border>
+
+</Window>
+
+//---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** IMPORTANT!!
+
+
+
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
