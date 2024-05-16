@@ -1,4 +1,3 @@
-
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 //---  C# WPF Programming - Create a relay command code | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
