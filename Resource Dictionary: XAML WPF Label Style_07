@@ -1,0 +1,73 @@
+
+//---  C# WPF Programming #07 - LabelStyles | WPF & XAML | - Windows Presentation Foundation		By WhiskeyTango Coding
+
+** Resource Dictionary (WPF)
+
+*/
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//--- Standard styles/Properties		(XAML code)				LabelStyles.xaml
+
+** Label Styles and Templates								** Folder: ControlStandards or ControlTemplates or StaticControls
+
+** Standard Windows label-			            x:Key="{x:Type Label}"
+
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- SimpleStyles: Label -->
+    <Style x:Key="{x:Type Label}" TargetType="Label">
+        <Setter Property="Margin" Value="10 5 10 5"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource DisabledForegroundColor}"/>
+        <Setter Property="FontFamily" Value="Microsoft Sans Serif"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="Content" Value="Label Placeholder"/>
+        <Setter Property="Template">
+
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Border x:Name="Border"
+                            BorderThickness="0"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="{TemplateBinding Property=Foreground}"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+
+//---
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+** IMPORTANT!!
+
+
+
+
+
+
+
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
+//
