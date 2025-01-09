@@ -1,5 +1,7 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/ Developer: WhiskeyTango Coding
+
 
 //---  C# WPF Programming #05 - ColorControls | WPF & XAML | - Windows Presentation Foundation (.NET Framework)
 
@@ -9,7 +11,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 
 //--- XAML programming		(XAML code)		** XAML - Basics		
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*=================================================    | PROJECT INTELLIGENCE |    ==================================================*/
 
 <!--  ** ONLY the code BELOW needs to be COPY & PASTED --> 
 
@@ -67,3 +69,9 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
     <SolidColorBrush x:Key="StopErrorColorSwatchesLT">#FFE51400</SolidColorBrush>
 
     <!-- ** NOTE Above - Color swatches by function for VS controls Light Theme --> 
+
+---
+
+/*======================================================    | END OF CODE |    ======================================================*/
+
+//
