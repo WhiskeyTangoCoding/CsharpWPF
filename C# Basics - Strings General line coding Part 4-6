@@ -2,7 +2,7 @@
 
 */
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*================================================    | PROJECT INTELLIGENCE |    ===================================================*/
 
 //--- C# Basics - Strings General line coding
 
@@ -115,6 +115,8 @@ Console.WriteLine(friends.StartsWith("My "));
 Console.WriteLine(friends.StartsWith("My  "));
 // Returns False		Also, note that SPACES matter. If you have a double space it returns False
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+---
+
+/*======================================================    | END OF CODE |    ======================================================*/
 
 //
