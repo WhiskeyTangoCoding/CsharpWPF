@@ -1,12 +1,13 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-//---  C# WPF Programming #00 - Windows Blue Color schemes | WPF & XAML | - Windows Presentation Foundation
+*/ Developer: WhiskeyTango Coding
 
-** 
+
+//---  C# WPF Programming #00 - Windows Blue Color schemes | WPF & XAML | - Windows Presentation Foundation
 
 */
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*=================================================    | PROJECT INTELLIGENCE |    ==================================================*/
 
 //--- XAML programming		(XAML code)		** XAML - Basics
 
@@ -40,7 +41,7 @@ Adjacent colors
 
 //---
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*====================================================    | PRIORITY TOPIC |    =====================================================*/
 
 ** Microsoft Edge blue
 
@@ -78,10 +79,9 @@ Han blue			Pink				Pastel yellow
 Blue								Yellow
 #00a4ef						       #ffb900
 
-
 //---
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*====================================================    | PRIORITY TOPIC |    =====================================================*/
 
 ** Microsoft Windows 7 blue (ORIGINAL)
 
@@ -96,7 +96,7 @@ Web safe: teal	25% desaturated		HTML: cornflowerblue
 
 //---
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*====================================================    | PRIORITY TOPIC |    =====================================================*/
 
 ** Microsoft HTML color code #357EC7 (ORIGINAL)
        Complimaentary Color: #c77e36
@@ -110,23 +110,10 @@ Inverted             25% saturated			Grayscale
 Web safe: blue	25% desaturated		HTML: steelblue
 ##0000fff / #00f	#447eb8			#4682b4
 
-
 ** 
 
-//---
+---
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
-
-** IMPORTANT!!
-
-
-
-
-
-
-
-
-
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*=====================================================    | END OF NOTES |    ======================================================*/
 
 //
