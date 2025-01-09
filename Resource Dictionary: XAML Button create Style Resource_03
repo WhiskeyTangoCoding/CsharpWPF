@@ -21,7 +21,7 @@ STEPS:  Select a <Button/>	Goto Properties... scroll down to Miscellaneous		Styl
 	This document
 **
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*=================================================    | PROJECT INTELLIGENCE |    ==================================================*/
 
 //--- XAML programming		(XAML code)		** XAML - Basics		CustomButtonStyles.xaml
 
@@ -108,20 +108,8 @@ STEPS:  Select a <Button/>	Goto Properties... scroll down to Miscellaneous		Styl
 
 </ResourceDictionary>
 
-//---
+---
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
-
-** IMPORTANT!!
-
-
-
-
-
-
-
-
-
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*======================================================    | END OF CODE |    ======================================================*/
 
 //
