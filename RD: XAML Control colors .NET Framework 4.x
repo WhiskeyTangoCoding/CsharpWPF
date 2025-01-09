@@ -1,5 +1,7 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/ Developer: WhiskeyTango Coding
+
 
 //---  C# WPF Programming #04 - ColorControls | WPF & XAML | - Windows Presentation Foundation (.NET Framework)
 
@@ -8,7 +10,7 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 
 //--- XAML programming		(XAML code)		** XAML - Basics		
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+/*=================================================    | PROJECT INTELLIGENCE |    ==================================================*/
 
 <!--  ** ONLY the code BELOW needs to be COPY & PASTED --> 
 
@@ -57,7 +59,12 @@ B. ** Create a Resource Dictionary (WPF)  ColorStyles.xaml
 <Color x:Key="HeaderTopColor">#FFC5CBF9</Color>
 <Color x:Key="DatagridCurrentCellBorderColor">Black</Color>
 <Color x:Key="SliderTrackDarkColor">#FFC5CBF9</Color>
-
 <Color x:Key="NavButtonFrameColor">#FF3843C4</Color>
 
 <!-- ** NOTE Above - These are Microsoft Standard Control colors .NET Framework 4.x ** -->
+
+---
+
+/*======================================================    | END OF CODE |    ======================================================*/
+
+//
