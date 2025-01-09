@@ -1,5 +1,9 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+*/ Developer: WhiskeyTango Coding
+
+/*====================================================    | GENERAL NOTES |    ======================================================*/
+
 //--- What is data?
 
 -In software development, data is essentially a value that is stored in the computer's memory as a series of bits.
@@ -173,10 +177,8 @@ A: Use the new operator to create a new instance of a reference type and return 
 
 //---
 
+---
 
+/*=====================================================    | END OF NOTES |    ======================================================*/
 
-
-
-
-
-//---
+//
