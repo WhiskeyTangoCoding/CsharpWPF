@@ -1,6 +1,6 @@
 // // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-*/
+*/ Developer: WhiskeyTango Coding
 
 /*====================================================    | GENERAL NOTES |    ======================================================*/
 
@@ -58,6 +58,8 @@ dotnet new console -n NumbersInCSharp -object .
 
 PS C:\code>\helloworld> clear	// clears the screen
 
-/*====================================================    | GENERAL NOTES |    ======================================================*/
+---
+
+/*=====================================================    | END OF NOTES |    ======================================================*/
 
 //
