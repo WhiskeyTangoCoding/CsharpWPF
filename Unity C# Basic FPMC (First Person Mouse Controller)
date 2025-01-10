@@ -1,0 +1,218 @@
+// // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+*/ Developer: WhiskeyTango Coding
+
+/*=================================================    | PROJECT INTELLIGENCE |    ==================================================*/
+
+//--- Unity Tutorials - Beginner-Intermediate 3D Animation                          (** Head-rotate ONLY code)
+
+--- 3D Head Rotate with a mouse (with continuous non-stop motion)	                  Basic FPMC (First Person Mouse Controller)
+--- with Cursor Hide
+
+// ------------------------------------------ 
+// HeadRotateCamera.cs
+// a basic first person mouse controller
+// for head-rotate (w/ Sensitivity Modifier)
+// YEAR-MM-DY Developer
+// 2025-01-09 YT @wtsharpproductions
+// Code Version 2022.3.0-fpmc0
+// ------------------------------------------ 
+
+// ** SETUP **
+// (Script) gets attached to the Main Camera
+// Create Empty > PARENT GameObject for Player and Main Camera (as child)
+// Main Camera : Transform : Position => X: 0, Y: 1.7, Z: 0     (for PlayerObject Y: 1.8)
+// Attach (Script) to Main Camera
+
+using UnityEngine;
+
+[RequireComponent(typeof(Transform))]
+public class HeadRotateCamera : MonoBehaviour
+{
+    // - Components -
+    [SerializeField] private Transform playerTx;                // this player object
+
+    [Header("USer Input Control Variables")]
+    [Tooltip("Disable if sending inputs from an external script")]
+    public bool useLocalInputs = true;
+    [Space(5)]
+    [HideInInspector] public string axisLookHorzizontal = "Mouse X";          // Mouse to Look
+    [HideInInspector] public string axisLookVertical = "Mouse Y";             //
+    [HideInInspector] public KeyCode keyToggleCursor = KeyCode.Escape;        // Esc to toggle lock cursor)
+
+    // Input Variables that can be assigned externally
+    // the cursor can also be manually locked or freed by calling the public void SetLockCursor( bool doLock )
+    [HideInInspector] public float inputLookX = 0.0f;               //
+    [HideInInspector] public float inputLookY = 0.0f;               //
+    [HideInInspector] public bool inputKeyDownCursor = false;       // is key Pressed
+
+    [Header("Mouse Look Control Variables")]
+    [SerializeField, Range(1f, 10f)] private float m_sensitivityModifier = 2.646f;
+    private float clampLookY = 89.5f;                // maximum look up/down angle
+
+    [Header("Supporting Reference Variables")]
+    private float m_headYaw = 0.0f;                  // the side-to-side movement angle the player is looking
+    private float m_headPitch = 0.0f;                // the up/down angle the player is looking
+    [Space(5)]
+    [HideInInspector] public bool cursorActive = false;                // cursor state
+
+
+    // Life cycle method. Start()
+    private void Start()
+    {
+        Initialize();
+
+        //Disable cursor
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    // Life cycle method. Update()
+    private void Update()
+    {
+        ProcessInputs();
+        ProcessLook();
+    }
+
+    #region Refactored Methods Region
+    private void Initialize()
+    {
+        if (playerTx == null)
+        {
+            Debug.LogWarning("* Main Camera has NOT been assigned a BasicFPCC Transform object *");
+            playerTx = transform;
+        }
+
+        RefreshCursor();
+    }
+
+    private void ProcessInputs()
+    {
+        if (useLocalInputs)
+        {
+            inputLookX = Input.GetAxis(axisLookHorzizontal);
+            inputLookY = Input.GetAxis(axisLookVertical);
+
+            inputKeyDownCursor = Input.GetKeyDown(keyToggleCursor);
+        }
+
+        if (inputKeyDownCursor)
+        {
+            ToggleLockCursor();
+        }
+    }
+
+    // ** ORIGINAL code without Mouse Smoothing
+    private void ProcessLook()
+    {
+        // rotate camera off the Y-axis
+        m_headYaw += m_sensitivityModifier * inputLookX;
+
+        // rotate camera off the X-axis
+        m_headPitch -= m_sensitivityModifier * inputLookY;
+        m_headPitch = Mathf.Clamp(m_headPitch, -clampLookY, clampLookY);
+
+        // apply this rotation. Quaternion is also responsible for rotation
+        transform.localRotation = Quaternion.Euler(m_headPitch, m_headYaw, 0.0f);
+    }
+
+    // lock/hide or show/unlock cursor
+    public void SetLockCursor(bool doLock)
+    {
+        cursorActive = doLock;
+        RefreshCursor();
+    }
+
+    private void ToggleLockCursor()
+    {
+        cursorActive = !cursorActive;
+    }
+
+    private void RefreshCursor()
+    {
+        if (inputKeyDownCursor)
+        {
+            //Enable cursor
+            if (cursorActive && Cursor.lockState != CursorLockMode.None)
+            { Cursor.lockState = CursorLockMode.Confined; }
+        }
+        else if (!inputKeyDownCursor)
+        {
+            //Disable cursor
+            if (!cursorActive && Cursor.lockState != CursorLockMode.Locked) { Cursor.lockState = CursorLockMode.Locked; }
+        }
+    }
+    #endregion
+    //---
+}
+
+*/
+
+/*====================================================    | PRIORITY TOPIC |    =====================================================*/
+
+//---	B. 3D Head Rotate with a mouse (with continuous motion)		
+
+** UPDATED code with Mouse Smoothing
+
+    [Header("Mouse Look Control Variables")]
+
+    [Tooltip("larger values for less filtering, more responsiveness")]
+    //private const float m_mouseSnappiness = 20.4f;     // default was 10f; larger values of this cause less filtering, more responsiveness
+    //private const float m_percentageConst = 100.0f;
+    //private bool invertLookY = false;                // toggle invert look Y
+
+
+    [Header("Supporting Reference Variables")]
+    private float accMouseX = 0.0f;                  // reference for mouse look smoothing
+    private float accMouseY = 0.0f;                  // reference for mouse look smoothing
+// <stop>
+
+
+    private void ProcessLook()
+    {
+        // ProcessLook code with Mouse Smoothing
+        accMouseX = Mathf.Lerp(accMouseX, inputLookX, m_mouseSnappiness * Time.deltaTime);
+        accMouseY = Mathf.Lerp(accMouseY, inputLookY, m_mouseSnappiness * Time.deltaTime);
+
+        float mouseX = accMouseX * m_speedModifier * m_percentageConst * Time.deltaTime;
+        float mouseY = accMouseY * m_speedModifier * m_percentageConst * Time.deltaTime;
+
+        // rotate camera off the Y-axis
+        m_headYaw += mouseX;
+
+        // rotate camera off the X-axis
+        m_headPitch += (invertLookY == true ? mouseY : -mouseY);
+        m_headPitch = Mathf.Clamp(m_headPitch, -clampLookY, clampLookY);
+
+        // apply this rotation. Quaternion is also responsible for rotation
+        transform.localRotation = Quaternion.Euler(m_headPitch, m_headYaw, 0.0f);
+    }
+
+**
+
+/*======================================================    | KEY NOTES |    ========================================================*/
+
+//--- Yaw:
+
+Yaw is a side-to-side movement of an airplane's nose, caused by the deflection of the rudder.
+
+Yaw is one of three dimensions of motion for an airplane, along with pitch and roll.
+
+The other two dimensions are: 
+Pitch: An up or down movement of the nose
+Roll: An up and down movement of the wing tips
+
+The yaw axis is the line perpendicular to the plane of the wings, and the airplane rotates around this axis to turn. To visualize yaw, you can imagine standing on the balls of your feet and twisting your weight from side to side.
+
+Yaw can be difficult to visualize because it involves movement along the z-axis.
+<stop>
+
+//--- Pitch
+
+Pitch is the rotation of an aircraft around its side-to-side axis, or the "up and down" motion of the plane. It's also known as the lateral or transverse axis.
+Pitch refers to the rotation of the aircraft around a side-to-side axis. It can be thought of as the “up and down” or “nodding” motion of the airplane.
+
+---
+
+/*=====================================================    | END OF NOTES |    ======================================================*/
+
+//
